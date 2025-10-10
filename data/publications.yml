@@ -1,0 +1,95 @@
+- year: 2025
+  authors: "Pourreza, R.; Dagli, R.; Bhattacharyya, A.; Panchal, S.; Berger, G.; Memisevic, R."
+  title: "Can VisionLanguage Models Answer Face to Face Questions in the Real-World?"
+  venue: "arXiv preprint arXiv:2503.19356"
+  link: "https://arxiv.org/abs/2503.19356"
+
+- year: 2025
+  authors: "Liu, L.; Pourreza, R.; Panchal, S.; Bhattacharyya, A.; Qin, Y.; Memisevic, R."
+  title: "Enhancing Hallucination Detection through Noise Injection"
+  venue: "arXiv preprint arXiv:2502.03799"
+  link: "https://arxiv.org/abs/2502.03799"
+
+- year: 2025
+  authors: "Hegde, D.; Yasarla, R.; Cai, H.; Han, S.; Bhattacharyya, A.; et al."
+  title: "Distilling Multi-modal Large Language Models for Autonomous Driving"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+
+- year: 2024
+  authors: "Panchal, S.*; Bhattacharyya, A.*; et al."
+  title: "Live Fitness Coaching as a Testbed for Situated Interaction"
+  venue: "NeurIPS Datasets and Benchmarks Track"
+  notes: "*joint first authorship"
+
+- year: 2024
+  authors: "Haresh, S.; Dijkman, D.; Bhattacharyya, A.; Memisevic, R."
+  title: "ClevrSkills: Compositional Language and Visual Reasoning in Robotics"
+  venue: "NeurIPS Datasets and Benchmarks Track"
+
+- year: 2024
+  authors: "Bhattacharyya, A.; Panchal, S.; Lee, M.; Pourreza, R.; Madan, P.; Memisevic, R."
+  title: "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+  venue: "International Conference on Learning Representations (ICLR)"
+
+- year: 2022
+  authors: "Hanselmann, N.; Renz, K.; Chitta, K.; Bhattacharyya, A.; Geiger, A."
+  title: "KING: Generating Safety-Critical Driving Scenarios for Robust Imitation via Kinematics Gradients"
+  venue: "European Conference on Computer Vision (ECCV)"
+
+- year: 2021
+  authors: "Bhattacharyya, A.; Reino, D.; Fritz, M.; Schiele, B."
+  title: "Euro-PVI: Pedestrian Vehicle Interactions in Dense Urban Centers"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+
+- year: 2020
+  authors: "Bhattacharyya, A.; Straehle, C.; Fritz, M.; Schiele, B."
+  title: "Haar Wavelet based Block Autoregressive Flows for Trajectories"
+  venue: "German Conference on Pattern Recognition (GCPR)"
+  notes: "Oral"
+
+- year: 2020
+  authors: "Bhattacharyya, A.*; Mahajan, S.*; Fritz, M.; Schiele, B.; Roth, S."
+  title: "Normalizing Flows with Multiscale Autoregressive Priors"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+  notes: "*joint first authorship"
+
+- year: 2020
+  authors: "Salem, A.; Bhattacharyya, A.; Backes, M.; Fritz, M.; Zhang, Y."
+  title: "Updates-Leak: Data Set Inference and Reconstruction Attacks in Online Learning"
+  venue: "USENIX Security Symposium"
+
+- year: 2019
+  authors: "Bhattacharyya, A.; Fritz, M.; Schiele, B."
+  title: "Bayesian Prediction of Future Street Scenes using Synthetic Likelihoods"
+  venue: "International Conference on Learning Representations (ICLR)"
+
+- year: 2018
+  authors: "Bhattacharyya, A.; Schiele, B.; Fritz, M."
+  title: "Accurate and Diverse Sampling of Sequences based on a ‘Best of Many’ Sample Objective"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+  notes: "Oral"
+
+- year: 2018
+  authors: "Bhattacharyya, A.; Fritz, M.; Schiele, B."
+  title: "Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+
+- year: 2018
+  authors: "Bhattacharyya, A.; Malinowski, M.; Schiele, B.; Fritz, M."
+  title: "Long Term Image Boundary Prediction"
+  venue: "AAAI Conference on Artificial Intelligence (AAAI)"
+
+- year: 2017
+  authors: "Bhattacharyya, A.; Vreeken, J."
+  title: "Efficiently Summarising Event Sequences with Rich Interleaving Patterns"
+  venue: "SIAM International Conference on Data Mining (SDM)"
+
+- year: 2017
+  authors: "Bhattacharyya, A.; Fritz, M.; Schiele, B."
+  title: "Long-Term On-Board Prediction of Pedestrians in Traffic Scenes"
+  venue: "Conference on Robot Learning (CoRL) Workshop Track"
+
+- year: 2016
+  authors: "Bhattacharyya, A.; Malinowski, M.; Fritz, M."
+  title: "Long Term Boundary Extrapolation for Deterministic Motion"
+  venue: "NIPS Workshop on Intuitive Physics"
