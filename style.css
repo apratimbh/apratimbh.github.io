@@ -54,6 +54,7 @@ a:hover { color: #a8c1ff; }
 }
 
 #bio .bio-avatar {
+  margin-top: 0.5rem;
   width: 160px;
   height: 160px;
   border-radius: 50%;
