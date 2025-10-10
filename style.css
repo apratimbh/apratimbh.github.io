@@ -45,6 +45,36 @@ li { margin: .5rem 0; }
 a { color: var(--link); }
 a:hover { color: #a8c1ff; }
 
+/* === Biography layout with image next to text === */
+#bio .bio-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;              /* space between photo and text */
+  margin-top: .5rem;
+}
+
+#bio .bio-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;        /* round portrait */
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,.08);  /* adjust if dark theme */
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  flex: 0 0 auto;            /* don't grow/shrink */
+}
+
+/* Stack on narrow screens */
+@media (max-width: 640px) {
+  #bio .bio-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #bio .bio-avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 footer {
   border-top: 1px solid #121826;
   padding: 1rem 0;
