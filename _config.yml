@@ -1,0 +1,8 @@
+title: "Apratim Bhattacharyya"
+description: "Machine Learning Researcher at Qualcomm AI Research"
+# If this is a user/organization site, set baseurl: "" and url: "https://<username>.github.io"
+# If this is a project site, set baseurl: "/<repo>" and url: "https://<username>.github.io"
+url: "https://<username>.github.io"
+baseurl: "/<repo>"   # Use "" if deploying at the root (username.github.io)
+markdown: kramdown
+theme: null          # We'll use our own layout and CSS
