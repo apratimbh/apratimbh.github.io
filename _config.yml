@@ -6,3 +6,5 @@ url: "https://<username>.github.io"
 baseurl: "/<repo>"   # Use "" if deploying at the root (username.github.io)
 markdown: kramdown
 theme: null          # We'll use our own layout and CSS
+exclude:
+  - README.md
