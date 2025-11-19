@@ -22,6 +22,7 @@ header {
   background: rgba(11, 15, 25, .85);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid #121826;
+  z-index: 10; /* Ensure header stays on top */
 }
 header .container {
   display: flex; align-items: center; justify-content: space-between;
@@ -36,16 +37,18 @@ nav a:hover { color: var(--fg); }
 
 main { padding: 2rem 1rem; }
 h2 {
-  font-size: 1.15rem; margin: 2rem 0 .75rem 0;
+  font-size: 1.15rem; margin: 2rem 0 1.5rem 0;
   border-bottom: 1px solid #1e2637; padding-bottom: .25rem;
 }
-ol { padding-left: 1.2rem; }
+
+/* Standard lists (for links section) */
+ul { padding-left: 1.2rem; }
 li { margin: .5rem 0; }
 
 a { color: var(--link); }
 a:hover { color: #a8c1ff; }
 
-/* === Biography layout with image next to text === */
+/* === Biography layout === */
 #bio .bio-content {
   display: flex;
   align-items: flex-start;
@@ -63,6 +66,58 @@ a:hover { color: #a8c1ff; }
   border: 2px solid rgba(255,255,255,0.1);
 }
 
+/* === Publications Grid Layout === */
+.pub-list {
+  list-style: none; /* Remove numbers */
+  padding: 0;
+  margin: 0;
+}
+
+.pub-list li {
+  display: grid;
+  /* Column 1: 180px wide image, Column 2: Remaining space */
+  grid-template-columns: 180px 1fr; 
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #121826; /* Subtle separator between papers */
+}
+
+/* Remove border from the last item */
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-img-wrapper {
+  width: 100%;
+  /* Aspect ratio container to prevent layout shift */
+  aspect-ratio: 16 / 9; 
+  background: #121826;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.pub-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers area without stretching */
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.pub-img-wrapper img:hover {
+  opacity: 0.8;
+}
+
+.pub-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 640px) {
   #bio .bio-content {
     flex-direction: column;
@@ -71,6 +126,16 @@ a:hover { color: #a8c1ff; }
   #bio .bio-avatar {
     width: 120px;
     height: 120px;
+  }
+  
+  /* Stack publication image on top of text for mobile */
+  .pub-list li {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .pub-img-wrapper {
+    max-width: 100%;
+    aspect-ratio: 21 / 9; /* Slightly wider banner style for mobile */
   }
 }
 
