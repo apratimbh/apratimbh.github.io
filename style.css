@@ -1,9 +1,11 @@
-/* Minimal, clean style */
+/* Minimal, clean style - Light Theme */
 :root {
-  --bg: #0b0f19;
-  --fg: #e6e6e6;
-  --muted: #aeb4c2;
-  --link: #7aa2ff;
+  --bg: #ffffff;
+  --fg: #1f2937;       /* Dark gray for text */
+  --muted: #6b7280;    /* Muted gray */
+  --link: #2563eb;     /* Standard blue */
+  --border: #e5e7eb;   /* Light gray for borders */
+  --card-bg: #f3f4f6;  /* Light gray for image backgrounds */
 }
 
 * { box-sizing: border-box; }
@@ -19,10 +21,10 @@ body {
 
 header {
   position: sticky; top: 0;
-  background: rgba(11, 15, 25, .85);
+  background: rgba(255, 255, 255, .85); /* White semi-transparent */
   backdrop-filter: saturate(180%) blur(10px);
-  border-bottom: 1px solid #121826;
-  z-index: 10; /* Ensure header stays on top */
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
 }
 header .container {
   display: flex; align-items: center; justify-content: space-between;
@@ -38,15 +40,15 @@ nav a:hover { color: var(--fg); }
 main { padding: 2rem 1rem; }
 h2 {
   font-size: 1.15rem; margin: 2rem 0 1.5rem 0;
-  border-bottom: 1px solid #1e2637; padding-bottom: .25rem;
+  border-bottom: 1px solid var(--border); 
+  padding-bottom: .25rem;
 }
 
-/* Standard lists (for links section) */
 ul { padding-left: 1.2rem; }
 li { margin: .5rem 0; }
 
 a { color: var(--link); }
-a:hover { color: #a8c1ff; }
+a:hover { color: #1d4ed8; }
 
 /* === Biography layout === */
 #bio .bio-content {
@@ -63,45 +65,42 @@ a:hover { color: #a8c1ff; }
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.1);
+  border: 2px solid rgba(0,0,0,0.1); /* Subtle shadow border */
 }
 
 /* === Publications Grid Layout === */
 .pub-list {
-  list-style: none; /* Remove numbers */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .pub-list li {
   display: grid;
-  /* Column 1: 180px wide image, Column 2: Remaining space */
   grid-template-columns: 180px 1fr; 
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #121826; /* Subtle separator between papers */
+  border-bottom: 1px solid var(--border);
 }
 
-/* Remove border from the last item */
 .pub-list li:last-child {
   border-bottom: none;
 }
 
 .pub-img-wrapper {
   width: 100%;
-  /* Aspect ratio container to prevent layout shift */
   aspect-ratio: 16 / 9; 
-  background: #121826;
+  background: var(--card-bg);
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 .pub-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers area without stretching */
+  object-fit: cover;
   display: block;
   transition: opacity 0.2s;
 }
@@ -117,7 +116,6 @@ a:hover { color: #a8c1ff; }
   font-size: 0.95rem;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 640px) {
   #bio .bio-content {
     flex-direction: column;
@@ -128,19 +126,18 @@ a:hover { color: #a8c1ff; }
     height: 120px;
   }
   
-  /* Stack publication image on top of text for mobile */
   .pub-list li {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
   .pub-img-wrapper {
     max-width: 100%;
-    aspect-ratio: 21 / 9; /* Slightly wider banner style for mobile */
+    aspect-ratio: 21 / 9;
   }
 }
 
 footer {
-  border-top: 1px solid #121826;
+  border-top: 1px solid var(--border);
   padding: 1rem 0;
   color: var(--muted);
   font-size: .95rem;
