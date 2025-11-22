@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="paper-title">Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?</h1>
+            
+            <div class="authors">
+                <span class="author">Apratim Bhattacharyya</span>,
+                <span class="author">Bicheng Xu</span>,
+                <span class="author">Sanjay Haresh</span>,
+                <span class="author">Reza Pourreza</span>,
+                <span class="author">Litian Liu</span>,
+                <span class="author">Sunny Panchal</span>,
+                <span class="author">Leonid Sigal</span>,
+                <span class="author">Roland Memisevic</span>
+            </div>
+
+            <div class="conference">
+                <span class="conf-name">NeurIPS 2025</span> <span class="tag">Poster</span>
+            </div>
+
+            <div class="links">
+                <a href="https://openreview.net/pdf?id=G6K2NepP7S" class="btn"><i class="fas fa-file-pdf"></i> Paper</a>
+                <a href="https://neurips.cc/virtual/2025/poster/118991" class="btn"><i class="fas fa-image"></i> Poster</a>
+                <a href="#" class="btn"><i class="fas fa-database"></i> Data (Coming Soon)</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Code (Coming Soon)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="section video-section">
+            <h2 class="section-title">Video Presentation</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <p class="caption">Introductory video demonstrating LiveMamba and the Qualcomm Interactive Cooking dataset.</p>
+        </section>
+
+        <section class="section abstract-section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract-text">
+                Multi-modal Large Language Models (LLM) have advanced conversational abilities but struggle with providing live, interactive step-by-step guidance, a key capability for future AI assistants. Effective guidance requires not only delivering instructions but also detecting their successful execution, as well as identifying and alerting users to mistakes, all of which has to happen in real-time. 
+            </p>
+            <p class="abstract-text">
+                This requires models that are not turn-based, but that can react asynchronously to a video stream, as well as video data showing users performing tasks including mistakes and their corrections. To this end, we introduce <strong>Qualcomm Interactive Cooking</strong>, a new benchmark and dataset built upon <em>CaptainCook4D</em>, which contains user mistakes during task execution. Our dataset and benchmark features densely annotated, timed instructions and feedback messages, specifically including mistake alerts precisely timestamped to their visual occurrence in the video. 
+            </p>
+            <p class="abstract-text">
+                We evaluate state-of-the-art multi-modal LLMs on the Qualcomm Interactive Cooking benchmark and introduce <strong>LiveMamba</strong>, a streaming multi-modal LLM designed for interactive instructional guidance. This work provides the first dedicated benchmark and a strong baseline for developing and evaluating on live, situated coaching.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Method Overview</h2>
+            <div class="image-placeholder">
+                <p>[Insert Architecture Diagram or Model Overview Here]</p>
+                <p class="caption-text">Figure 1: Overview of the LiveMamba architecture and the streaming interaction pipeline.</p>
+            </div>
+        </section>
+
+        <section class="section bibtex-section">
+            <h2 class="section-title">Citation</h2>
+            <pre><code>@inproceedings{
+bhattacharyya2025can,
+title={Can Multi-Modal {LLM}s Provide Live Step-by-Step Task Guidance?},
+author={Apratim Bhattacharyya and Bicheng Xu and Sanjay Haresh and Reza Pourreza and Litian Liu and Sunny Panchal and Leonid Sigal and Roland Memisevic},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=G6K2NepP7S}
+}</code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Project Page. Built for NeurIPS 2025.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
