@@ -181,6 +181,96 @@
             </div>
         </section>
 
+        <section class="section">
+            <h2 class="section-title">Fine-Tuned Models Evaluation: Qualcomm Interactive Cooking Main Set</h2>
+            <div class="table-container">
+                <table class="results-table">
+                    <!--<caption>Table 2: Evaluation of fine-tuned models on the Qualcomm Interactive Cooking benchmark (<sup>&dagger;</sup>indicates models fine-tuned by us).</caption>-->
+                    <thead>
+                        <tr>
+                            <th class="no-border"></th>
+                            <th class="header-group">Instruction</th>
+                            <th class="header-group" colspan="5">Mistake</th>
+                        </tr>
+                        <tr class="header-row-bottom">
+                            <th class="col-method">Method</th>
+                            <th>IC-Acc &uarr;</th>
+                            <th>Prec. &uarr;</th>
+                            <th>Rec. &uarr;</th>
+                            <th>F1 &uarr;</th>
+                            <th>BERT &uarr;</th>
+                            <th>ROUGE-L &uarr;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Main Set</em></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="method-name">Videollm-online<sup>&dagger;</sup></td>
+                            <td>7.6</td>
+                            <td>0.04</td>
+                            <td>0.01</td>
+                            <td>0.01</td>
+                            <td>0.434</td>
+                            <td>0.412</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">LiveMamba (w/o-ICAug)</td>
+                            <td>7.8</td>
+                            <td>0.05</td>
+                            <td>0.01</td>
+                            <td>0.01</td>
+                            <td>0.605</td>
+                            <td>0.542</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">LiveMamba (w/o-CFAug)</td>
+                            <td>14.3</td>
+                            <td>0.12</td>
+                            <td>0.03</td>
+                            <td>0.05</td>
+                            <td>0.558</td>
+                            <td>0.511</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">LiveMamba (Ours)</td>
+                            <td><strong>31.5</strong></td>
+                            <td><strong>0.17</strong></td>
+                            <td><strong>0.10</strong></td>
+                            <td><strong>0.13</strong></td>
+                            <td><em>0.651</em></td>
+                            <td><em>0.561</em></td>
+                        </tr>
+
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Advanced Planning Set</em></td>
+                        </tr>
+
+                        <tr>
+                            <td class="method-name">LiveMamba (w/o-reP)</td>
+                            <td>10.9</td>
+                            <td><strong>0.38</strong></td>
+                            <td>0.10</td>
+                            <td>0.16</td>
+                            <td>0.912</td>
+                            <td>0.901</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">LiveMamba (Ours)</td>
+                            <td><strong>12.6</strong></td>
+                            <td><strong>0.38</strong></td>
+                            <td><strong>0.13</strong></td>
+                            <td><strong>0.19</strong></td>
+                            <td><em>0.941</em></td>
+                            <td><em>0.927</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="section bibtex-section">
             <h2 class="section-title">Citation</h2>
             <pre>
