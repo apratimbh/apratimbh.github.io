@@ -73,6 +73,114 @@
             </div>
         </section>
 
+        <section class="section">
+            <h2 class="section-title">Zero-shot Evaluation</h2>
+            <div class="table-container">
+                <table class="results-table">
+                    <caption>Table 1: Zero-shot evaluation on the main set of the benchmark.</caption>
+                    <thead>
+                        <tr>
+                            <th class="no-border"></th>
+                            <th class="header-group">Instruction</th>
+                            <th class="header-group" colspan="5">Mistake</th>
+                        </tr>
+                        <tr class="header-row-bottom">
+                            <th class="col-method">Method</th>
+                            <th>IC-Acc &uarr;</th>
+                            <th>Prec. &uarr;</th>
+                            <th>Rec. &uarr;</th>
+                            <th>F1 &uarr;</th>
+                            <th>BERT &uarr;</th>
+                            <th>ROUGE-L &uarr;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="method-name">LLaVA-NeXT</td>
+                            <td>1.4</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Video-ChatGPT</td>
+                            <td>1.6</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">VideoChat2</td>
+                            <td>1.6</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Video-LLaVA</td>
+                            <td>2.0</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">VideoLLaMA3-7B</td>
+                            <td>1.8</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Videollm-online</td>
+                            <td>0.03</td>
+                            <td>0.02</td>
+                            <td><strong>0.98</strong></td>
+                            <td>0.04</td>
+                            <td>0.332</td>
+                            <td>0.248</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen2-VL-7B</td>
+                            <td>6.3</td>
+                            <td>0.02</td>
+                            <td>0.69</td>
+                            <td><strong>0.05</strong></td>
+                            <td>0.377</td>
+                            <td>0.256</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen2.5-VL-7B</td>
+                            <td>18.9</td>
+                            <td><strong>0.18</strong></td>
+                            <td>0.01</td>
+                            <td>0.02</td>
+                            <td>0.299</td>
+                            <td>0.219</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">Gemini-2.5-Flash</td>
+                            <td><strong>23.1</strong></td>
+                            <td>0.01</td>
+                            <td>0.22</td>
+                            <td>0.02</td>
+                            <td><em>0.410</em></td>
+                            <td><em>0.342</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="section bibtex-section">
             <h2 class="section-title">Citation</h2>
             <pre>

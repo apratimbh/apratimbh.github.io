@@ -184,6 +184,80 @@ a {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle depth */
 }
 
+/* Table Styles */
+.table-container {
+    overflow-x: auto; /* Allows scrolling on mobile if table is too wide */
+    margin-top: 20px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.results-table caption {
+    caption-side: top;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.results-table th, 
+.results-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header Specifics */
+.results-table thead th {
+    font-weight: 600;
+    color: #333;
+}
+
+.results-table .header-group {
+    border-bottom: 1px solid #aaa; /* Line under "Mistake" and "Instruction" groups */
+}
+
+.results-table .no-border {
+    border-bottom: none;
+}
+
+.results-table .header-row-bottom th {
+    border-bottom: 2px solid #333; /* Strong line separating header from data */
+    vertical-align: bottom;
+}
+
+/* Column Specifics */
+.results-table .col-method,
+.results-table .method-name {
+    text-align: left;
+    min-width: 160px; /* Ensures method names don't wrap too aggressively */
+}
+
+.results-table .method-name {
+    color: #444;
+}
+
+/* Formatting for bold/italics in table */
+.results-table strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.results-table em {
+    font-style: italic;
+    color: #555;
+}
+
+/* Optional: Slight hover effect for rows */
+.results-table tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
 .caption-text {
     margin-top: 15px;
     font-size: 0.9rem;
