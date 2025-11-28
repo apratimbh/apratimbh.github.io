@@ -25,6 +25,8 @@
                 <span class="author">Roland Memisevic</span>
             </div>
 
+            <p class="caption">* indicates joint first authorship.</p>
+
             <div class="conference">
                 <span class="conf-name">NeurIPS 2025</span>
             </div>
@@ -182,7 +184,7 @@
         </section>
 
         <section class="section">
-            <h2 class="section-title">Fine-Tuned Models Evaluation: Qualcomm Interactive Cooking Main Set</h2>
+            <h2 class="section-title">Fine-Tuned Models Evaluation</h2>
             <div class="table-container">
                 <table class="results-table">
                     <!--<caption>Table 2: Evaluation of fine-tuned models on the Qualcomm Interactive Cooking benchmark (<sup>&dagger;</sup>indicates models fine-tuned by us).</caption>-->
@@ -265,6 +267,69 @@
                             <td><strong>0.19</strong></td>
                             <td><em>0.941</em></td>
                             <td><em>0.927</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Turn-based Evaluation</h2>
+            <div class="table-container">
+                <table class="results-table">
+                    <!--<caption>Table 3: Turn-based evaluation on the main set of the Qualcomm Interactive Cooking benchmark.</caption>-->
+                    <thead>
+                        <tr>
+                            <th class="no-border"></th>
+                            <th class="header-group">Instruction</th>
+                            <th class="header-group" colspan="5">Mistake</th>
+                        </tr>
+                        <tr class="header-row-bottom">
+                            <th class="col-method">Method</th>
+                            <th>IC-Acc &uarr;</th>
+                            <th>Prec. &uarr;</th>
+                            <th>Rec. &uarr;</th>
+                            <th>F1 &uarr;</th>
+                            <th>BERT &uarr;</th>
+                            <th>ROUGE-L &uarr;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="method-name">VideoLLaMA3-7B</td>
+                            <td>17.8</td>
+                            <td>0.08</td>
+                            <td><strong>0.61</strong></td>
+                            <td><strong>0.15</strong></td>
+                            <td>0.406</td>
+                            <td>0.346</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen2-VL-7B</td>
+                            <td>19.4</td>
+                            <td>0.06</td>
+                            <td>0.46</td>
+                            <td>0.11</td>
+                            <td><em>0.398</em></td>
+                            <td><em>0.293</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen2.5-VL-7B</td>
+                            <td><strong>38.9</strong></td>
+                            <td><strong>0.11</strong></td>
+                            <td>0.04</td>
+                            <td>0.06</td>
+                            <td>0.348</td>
+                            <td>0.230</td>
+                        </tr>
+                        <tr style="border-top: 2px solid #ddd;">
+                            <td class="method-name">LiveMamba<sup>&dagger;</sup> (Ours)</td>
+                            <td><strong>51.0</strong></td>
+                            <td><strong>0.22</strong></td>
+                            <td>0.17</td>
+                            <td><strong>0.19</strong></td>
+                            <td><em>0.631</em></td>
+                            <td><em>0.535</em></td>
                         </tr>
                     </tbody>
                 </table>
