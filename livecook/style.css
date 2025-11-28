@@ -169,6 +169,21 @@ a {
     color: #888;
 }
 
+.figure-container {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.figure-image {
+    max-width: 100%;       /* Prevents image from overflowing the container */
+    height: auto;          /* Maintains the correct aspect ratio */
+    border-radius: 4px;    /* Optional: Slight rounding to match the design */
+    display: block;        /* Removes inline spacing quirks */
+    margin: 0 auto;        /* Centers the image */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle depth */
+}
+
 .caption-text {
     margin-top: 15px;
     font-size: 0.9rem;
