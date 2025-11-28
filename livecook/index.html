@@ -275,8 +275,8 @@
                 </table>
             </div>
             <p class="abstract-text">
-            Our proactive LiveMamba model leverages an efficient Mamba-130M backbone, enabling more embedding tokens per frame at similar memory costs, and benefits from diverse pre-training and fine-tuning augmentations. Instruction completion augmentation (ICAug) and counterfactual mistake augmentation (CFAug) significantly improve IC-Acc and mistake F1 scores, highlighting the importance of mistake data for robust feedback. Finally, incorporating an external re-planning module enhances performance on advanced planning tasks, though providing correct instructions in complex, divergent scenarios remains challenging.
-            </p>p    
+            Our proactive LiveMamba model leverages an efficient Mamba-130M backbone, enabling more embedding tokens per frame at similar memory costs, and benefits from pre-training and fine-tuning augmentations. Instruction completion augmentation (ICAug) and counterfactual mistake augmentation (CFAug) significantly improve IC-Acc and mistake F1 scores, highlighting the importance of mistake data for robust feedback. Finally, incorporating an external re-planning module enhances performance on advanced planning tasks, though providing correct instructions in complex, divergent scenarios remains challenging.
+            </p>    
         </section>
 
         <section class="section">
@@ -340,6 +340,9 @@
                     </tbody>
                 </table>
             </div>
+            <p class="abstract-text">
+            The streaming evaluation above assesses models under multi-step guidance, a challenging setting due to error propagation, where failure to detect instruction completion compromises subsequent predictions. While this reflects real-world conditions, it makes measuring progress more complicated. Therefore, we introduce a turn-based evaluation that scores models on individual steps. Results above show substantially higher instruction completion accuracy and improved mistake detection by LiveMamba compared to zero-shot baselines, highlighting the benefits of fine-tuning and augmentation. Together, streaming and turn-based evaluations provide a more comprehensive view of performance.
+            </p>
         </section>
 
         <section class="section bibtex-section">
