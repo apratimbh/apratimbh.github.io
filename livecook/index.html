@@ -39,9 +39,15 @@
     </header>
 
     <main class="container">
+        <section class="section abstract-section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract-text">
+                Multi-modal Large Language Models (LLM) have advanced conversational abilities but struggle with providing live, interactive step-by-step guidance, a key capability for future AI assistants. Effective guidance requires not only delivering instructions but also detecting their successful execution, as well as identifying and alerting users to mistakes, all of which has to happen in real-time. This requires models that are not turn-based, but that can react asynchronously to a video stream, as well as video data showing users performing tasks including mistakes and their corrections. To this end, we introduce Qualcomm Interactive Cooking, a new benchmark and dataset built upon CaptainCook4D, which contains user mistakes during task execution. Our dataset and benchmark features densely annotated, timed instructions and feedback messages, specifically including mistake alerts precisely timestamped to their visual occurrence in the video. We evaluate state-of-the-art multi-modal LLMs on the Qualcomm Interactive Cooking benchmark and introduce LiveMamba, a streaming multi-modal LLM designed for interactive instructional guidance. This work provides the first dedicated benchmark and a strong baseline for developing and evaluating on live, situated coaching.
+            </p>
+        </section>
         
         <section class="section video-section">
-            <h2 class="section-title">Video: Qualcomm Interactive Cooking dataset</h2>
+            <h2 class="section-title">Video: Qualcomm Interactive Cooking Dataset</h2>
             <div class="video-container">
                 <iframe src="hhttps://www.youtube.com/embed/m7mXfeKjbs8" 
                         title="YouTube video player" 
@@ -50,20 +56,13 @@
                         allowfullscreen>
                 </iframe>
             </div>
-            <p class="caption">Introductory video demonstrating the Qualcomm Interactive Cooking dataset.</p>
-        </section>
-
-        <section class="section abstract-section">
-            <h2 class="section-title">Abstract</h2>
-            <p class="abstract-text">
-                Multi-modal Large Language Models (LLM) have advanced conversational abilities but struggle with providing live, interactive step-by-step guidance, a key capability for future AI assistants. Effective guidance requires not only delivering instructions but also detecting their successful execution, as well as identifying and alerting users to mistakes, all of which has to happen in real-time. This requires models that are not turn-based, but that can react asynchronously to a video stream, as well as video data showing users performing tasks including mistakes and their corrections. To this end, we introduce Qualcomm Interactive Cooking, a new benchmark and dataset built upon CaptainCook4D, which contains user mistakes during task execution. Our dataset and benchmark features densely annotated, timed instructions and feedback messages, specifically including mistake alerts precisely timestamped to their visual occurrence in the video. We evaluate state-of-the-art multi-modal LLMs on the Qualcomm Interactive Cooking benchmark and introduce LiveMamba, a streaming multi-modal LLM designed for interactive instructional guidance. This work provides the first dedicated benchmark and a strong baseline for developing and evaluating on live, situated coaching.
-            </p>
+            <p class="caption">Introductory video demonstrating the Qualcomm Interactive Cooking Dataset.</p>
         </section>
 
         <section class="section">
-            <h2 class="section-title">Method Overview</h2>
+            <h2 class="section-title">LiveMamba: Streaming Interactive Assistant</h2>
             <div class="image-placeholder">
-                <p>[Insert Architecture Diagram or Model Overview Here]</p>
+                <img src="assets/livemamba.jpg" alt="LiveMamba">
                 <p class="caption-text">Figure 1: Overview of the LiveMamba architecture and the streaming interaction pipeline.</p>
             </div>
         </section>
