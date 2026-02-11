@@ -116,6 +116,38 @@ a:hover { color: #1d4ed8; }
   font-size: 0.95rem;
 }
 
+/* Style for publication titles - make them bold and larger */
+.pub-details span:has(em strong),
+.pub-details span em strong {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--fg);
+  display: block;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+/* Style for author lists - first span in pub-details */
+.pub-details > span:first-child {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+/* Style for venue information */
+.pub-details > span:nth-child(3) {
+  color: var(--fg);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+/* Style for links */
+.pub-details > span:last-child {
+  margin-top: 0.2rem;
+}
+
 @media (max-width: 640px) {
   #bio .bio-content {
     flex-direction: column;
