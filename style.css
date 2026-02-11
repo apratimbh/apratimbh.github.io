@@ -135,12 +135,25 @@ a:hover { color: #1d4ed8; }
   line-height: 1.5;
 }
 
-/* Style for venue information */
+/* Style for venue information - make it stand out more */
 .pub-details > span:nth-child(3) {
-  color: var(--fg);
-  font-size: 0.9rem;
-  font-style: italic;
+  color: #059669; /* Green color for venues */
+  font-size: 0.95rem;
+  font-weight: 600;
   margin-bottom: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+/* Make (Oral) presentations stand out even more */
+.pub-details > span:nth-child(3) strong {
+  color: #dc2626; /* Red color for Oral */
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  background-color: #fee2e2; /* Light red background */
+  border-radius: 3px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Style for links */
