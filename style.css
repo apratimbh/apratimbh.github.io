@@ -70,16 +70,65 @@ a:hover { color: #1d4ed8; }
 
 /* === Bio links row === */
 .bio-links {
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
+.bio-links a,
+.bio-links .obf-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+/* Google Scholar — blue tint */
+.bio-links .link-scholar {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+.bio-links .link-scholar:hover {
+  background: #dbeafe;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
+}
+
+/* LinkedIn — LinkedIn blue tint */
+.bio-links .link-linkedin {
+  background: #f0f9ff;
+  color: #0369a1;
+  border-color: #bae6fd;
+}
+.bio-links .link-linkedin:hover {
+  background: #e0f2fe;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(3,105,161,0.15);
+}
+
+/* Email pill — gray tint, not clickable */
 .obf-email {
   unicode-bidi: bidi-override;
   direction: rtl;
-  color: var(--link);
+  background: #f9fafb;
+  color: var(--muted);
+  border-color: var(--border);
   user-select: none;
   cursor: default;
+}
+
+.bio-links svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
 }
 
 /* === Publications Grid Layout === */
