@@ -129,6 +129,10 @@ a:hover { color: #1d4ed8; }
   flex-shrink: 0;
   width: 14px;
   height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  max-width: 14px;
+  max-height: 14px;
 }
 
 /* === Publications Grid Layout === */
