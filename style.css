@@ -68,6 +68,20 @@ a:hover { color: #1d4ed8; }
   border: 2px solid rgba(0,0,0,0.1); /* Subtle shadow border */
 }
 
+/* === Bio links row === */
+.bio-links {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.obf-email {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  color: var(--link);
+  user-select: none;
+  cursor: default;
+}
+
 /* === Publications Grid Layout === */
 .pub-list {
   list-style: none;
