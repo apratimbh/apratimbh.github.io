@@ -256,6 +256,21 @@ a {
     border-bottom: 2px solid #ddd;
 }
 
+/* Feature list links */
+.feature-list a {
+    color: #0066cc;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.feature-list a:hover {
+    color: #004499;
+    text-decoration-color: #004499;
+}
+
 /* BibTeX */
 .bibtex-section pre {
     background-color: #f4f4f4;
