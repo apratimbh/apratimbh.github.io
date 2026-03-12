@@ -54,36 +54,58 @@ a:hover { color: #1d4ed8; }
 #bio .bio-content {
   display: flex;
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1.75rem;
   margin-top: 0.1rem;
 }
 
+/* Left column: avatar + links stacked */
+#bio .bio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
 #bio .bio-avatar {
-  margin-top: 0.5rem;
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
-  border: 2px solid rgba(0,0,0,0.1); /* Subtle shadow border */
+  border: 2px solid rgba(0,0,0,0.1);
+  display: block;
 }
 
-/* === Bio links row === */
+/* Bio paragraph */
+.bio-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--fg);
+  background: var(--card-bg);
+  border-left: 3px solid var(--link);
+  padding: 1rem 1.25rem;
+  border-radius: 0 6px 6px 0;
+}
+
+/* === Bio links column (under portrait) === */
 .bio-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  width: 160px;
 }
 
 .bio-links a,
 .bio-links .obf-email {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
@@ -233,9 +255,25 @@ a:hover { color: #1d4ed8; }
     flex-direction: column;
     align-items: flex-start;
   }
+  #bio .bio-left {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
   #bio .bio-avatar {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+  }
+  .bio-links {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .bio-text {
+    font-size: 0.95rem;
   }
   
   .pub-list li {
