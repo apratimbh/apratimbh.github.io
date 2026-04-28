@@ -145,6 +145,17 @@ a:hover {
   background: #000;
 }
 
+.benchmark-figure {
+  margin: 18px auto 14px;
+  max-width: 620px;
+}
+
+.benchmark-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .caption {
   margin-top: 6px;
   font-size: 0.96rem;
