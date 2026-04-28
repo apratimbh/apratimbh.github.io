@@ -199,6 +199,66 @@ a:hover { color: #1d4ed8; }
   line-height: 1.4;
 }
 
+/* === Blog Posts Section === */
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.blog-thumb-link {
+  display: block;
+}
+
+.blog-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.blog-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.blog-title:hover {
+  color: var(--link);
+}
+
+.blog-summary {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 /* === Publications Grid Layout === */
 .pub-list {
   list-style: none;
@@ -316,6 +376,16 @@ a:hover { color: #1d4ed8; }
   }
   .bio-text {
     font-size: 0.95rem;
+  }
+
+  .blog-item {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 0.6rem;
+  }
+
+  .blog-thumb-link {
+    max-width: 220px;
   }
   
   .pub-list li {
