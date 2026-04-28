@@ -35,41 +35,32 @@
     </div>
 
     <p>
-      State-of-the-art multimodal LLMs are impressive — but most of them still
-      operate in a fundamentally <strong>turn-based</strong> way. They respond
-      when we ask. They wait when we don’t. That works well for many text- and
+      State-of-the-art multimodal LLMs are impressive but most of them still
+      operate in a fundamentally turn-based way: they respond
+      only when prompted. They wait when we don’t. That works well for many text- and
       image-based tasks, but it is not how intelligence works in the real world.
-      Biological agents do not wait for a prompt before integrating vision,
-      memory, and action. They continuously perceive, interpret, and adapt.
-    </p>
-
-    <p>
-      If we want AI systems that behave more like real assistants — and
-      eventually support more general-purpose robotics — they need to reason
-      over <strong>continuous multimodal streams</strong>, not just isolated
-      prompts.
+      From birds to dogs, animals interact with their environments continuously, 
+      integrating multimodal sensory inputs and selecting actions in real time.
+      Replicating this kind of continuous perception and action in AI would be an important step toward AGI 
+      and general-purpose robotics, since real-world intelligence requires intelligent agents to 
+      perceive, reason, and act over continuous streams of multimodal input. 
     </p>
 
     <h2>From turn-based chat to always-on multimodal assistance</h2>
 
     <p>
       This shift is already visible in frontier systems. Google’s
-      <strong>Gemini Live</strong> adds real-time spoken interaction together
-      with camera and screen sharing, while <strong>Project Astra</strong>
+      Gemini Live adds real-time spoken interaction together
+      with camera and screen sharing, while Project Astra
       explores a broader “universal assistant” vision with multimodal memory,
       tool use, action-taking, and proactive responses.
     </p>
 
     <p>
-      But today’s public interaction model is still largely framed as a
-      user-initiated conversation: you “Go Live,” speak, and get spoken
+      But today’s frontier models are still largely limited to
+      user-initiated conversations: you “Go Live,” speak, and get spoken
       responses. That is still different from a truly always-on assistant that
       decides for itself when to intervene.
-    </p>
-
-    <p>
-      In real-world assistance, success depends not just on <em>what</em> to
-      say, but also on <em>whether</em> the system should say anything at all.
     </p>
 
     <h2>Gemini Live / Project Astra style interaction</h2>
@@ -101,7 +92,7 @@
     <p>
       At the benchmark level, three influential recent efforts are
       <strong>StreamingBench</strong>, <strong>OVO-Bench</strong>, and
-      <strong>RIVER</strong>. Together, these benchmarks move beyond offline
+      <strong>RIVER</strong> (among others). Together, these benchmarks move beyond offline
       video QA toward temporally grounded, streaming interaction.
     </p>
 
@@ -109,8 +100,8 @@
 
     <p>
       <strong>Understanding current events</strong> is the ability to interpret
-      what is happening <strong>right now</strong> from the current stream. In
-      OVO-Bench, this appears as <strong>Real-Time Visual Perception</strong>,
+      what is happening right now from the current stream. In
+      OVO-Bench, this appears as "Real-Time Visual Perception",
       which covers objects, actions, attributes, OCR, spatial relationships, and
       immediate online-style questions.
     </p>
@@ -118,7 +109,7 @@
     <p>
       <strong>Recalling past events</strong> is the ability to recover
       information that is no longer visible. OVO-Bench’s
-      <strong>Backward Tracing</strong> makes this concrete with examples like
+      "Backward Tracing" makes this concrete with examples like
       “Who did I communicate to when chopping egg plants?”, “What did I drop in
       the bowl in the sink?”, and “What food did I chop?”
     </p>
@@ -126,16 +117,16 @@
     <p>
       <strong>Tracking future events</strong> is the ability to keep monitoring
       until a relevant event actually happens. In OVO-Bench,
-      <strong>Forward Active Responding</strong> includes tasks like
-      <strong>Repetition Event Count</strong> and
-      <strong>Sequential Steps Recognition</strong>, where the correct behavior
+      "Forward Active Responding" includes tasks like
+      Repetition Event Count and
+      Sequential Steps Recognition, where the correct behavior
       is continued observation followed by a response at the right moment.
     </p>
 
     <p>
       <strong>Knowing “when to say”</strong> is the ability to decide whether to
       answer now or wait for more evidence. OVO-Bench’s
-      <strong>Clues Reveal Responding</strong> captures this especially well:
+      "Clues Reveal Responding" captures this especially well:
       the model should stay silent until enough visual evidence has accumulated
       to support a correct response.
     </p>
@@ -152,11 +143,10 @@
 
     <p>
       Recent work reinforces how much room there still is to improve evaluation.
-      In particular, <strong>SimpleStream</strong> showed that an off-the-shelf
+      In particular, <strong>SimpleStream</strong> very recently showed that an off-the-shelf
       VLM using only a tiny sliding window of recent frames can already match or
-      beat many specialized streaming systems. That suggests current benchmarks
-      are useful, but still not yet sufficient stress tests for richer,
-      real-world multimodal assistance.
+      beat many specialized streaming models. That suggests current benchmarks
+      are useful, but still not yet sufficient stress tests for real-world multimodal intelligence.
     </p>
 
     <h2>Interactive task guidance: a stronger and more realistic testbed</h2>
@@ -172,18 +162,28 @@
     <p>
       This setup naturally combines perception, memory, anticipation, temporal
       grounding, and proactive communication in one unified problem. It is much
-      closer to what future assistants — and many embodied systems — will
-      actually need to do.
+      closer to the challenges intelligent multimodal agents will
+      actually face in the real-world.
     </p>
 
+    <video controls playsinline class="local-video">
+      <source src="/assets/blogs/interactive-task-guidance/fitness.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
     <p>
-      This is the motivation behind <strong>QEVD / Live Fitness Coaching</strong>
+      This is the motivation behind <strong>QEVD</strong>
       (NeurIPS 2024), which introduced fitness coaching as a benchmark for
       situated interaction. The key challenge is not just understanding human
       motion, but recognizing mistakes and delivering the <em>right</em>
       feedback at the <em>right</em> time, asynchronously, as the activity
       unfolds.
     </p>
+
+    <video controls playsinline class="local-video">
+      <source src="/assets/blogs/interactive-task-guidance/cooking.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
     <p>
       That idea continues in <strong>Qualcomm Interactive Cooking</strong>
@@ -193,46 +193,18 @@
       successful completion, identify mistakes, and issue corrective feedback at
       precisely the right moment.
     </p>
-
-    <h2>Demo slot: add your own benchmark video here</h2>
-
-    <video controls playsinline class="local-video">
-      <source src="/assets/interactive-task-guidance/demo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
-    <p class="caption">
-      Replace <code>/assets/interactive-task-guidance/demo.mp4</code> with your own hosted demo file.
-    </p>
+    
 
     <h2>Why this matters</h2>
 
     <p>
       Guiding a person through a real-world task is one of the cleanest
-      testbeds we have for <strong>multimodal intelligence under continuous
-      input</strong>. It compresses a large fraction of the real problem into a
-      single scenario: the model must interpret visual scenes, track task
-      progress, remember earlier actions, anticipate next steps, detect
-      mistakes, and communicate proactively — all while the world keeps moving.
-    </p>
-
-    <p>
-      That makes interactive task guidance a powerful benchmark not only for AI
-      assistants, but also for the capabilities we eventually want in embodied
-      agents and household robots. The nice part is that it disentangles
-      <strong>thinking</strong> from <strong>acting</strong>: the model provides
+      testbeds we have for benchmarking multimodal intelligence with continiuous sensory inputs. 
+      Moreoever, this testbed tests capabilities we eventually want in embodied
+      agents and household robots. It convinently disentangles
+      thinking from acting: the model provides
       the intelligence and guidance, while the human remains the action expert
       executing the task.
-    </p>
-
-    <blockquote>
-      Can multimodal models move beyond passive description and become timely,
-      context-aware collaborators in the physical world?
-    </blockquote>
-
-    <p>
-      The answer today is still “not yet” — but these benchmarks are showing us
-      exactly what is missing, and what we need to build next.
     </p>
 
     <hr />
