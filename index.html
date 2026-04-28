@@ -2,382 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apratim Bhattacharyya</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="google-site-verification" content="qPymM2jHEG6xv7qn_cwrjsgd5Hc_UJwo5_l3i3D2E5A" />
-
-  <meta name="description" content="Apratim Bhattacharyya">
-  <meta name="description" content="Apratim Bhattacharyya — Machine Learning Researcher at Qualcomm AI Research" />
-  <meta name="description" content="Personal website of Apratim Bhattacharyya. Research in Machine Learning, Computer Vision, and AI. View publications, projects, and contact information.">
-  
-  <meta property="og:title" content="Apratim Bhattacharyya">
-  <meta property="og:description" content="Researcher in Machine Learning and Computer Vision.">
-  <meta name="author" content="Apratim Bhattacharyya">
-
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Apratim Bhattacharyya",
-    "url": "https://apratimbh.github.io",
-    "jobTitle": "Researcher",
-    "sameAs": [
-      "https://www.linkedin.com/in/apratim-bhattacharyya-1519664a/",
-      "https://github.com/apratimbh",
-      "https://scholar.google.com/citations?user=SKb4VyUAAAAJ",
-      "https://x.com/apratimbh",
-      "https://apratimbh.github.io/"
-    ]
-  }
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NKSRY5715"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-8NKSRY5715');
-  </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Task Guidance as a Testbed for Multimodal Intelligence</title>
+  <meta name="description" content="Why interactive task guidance is a stronger benchmark for streaming multimodal intelligence than turn-based multimodal chat." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Apratim Bhattacharyya</h1>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="home-link" href="/">Apratim Bhattacharyya</a>
     </div>
   </header>
 
+  <main class="post">
+    <figure class="intro-figure">
+      <img
+        class="intro-image"
+        src="/assets/blogs/interactive-task-guidance/intro.jpg"
+        alt="Illustration for interactive task guidance."
+        loading="eager"
+      />
+    </figure>
 
-  <main class="container">
-    <!-- ===== Biography ===== -->
-    <section id="bio">
-    <h2>Biography</h2>
-  
-    <div class="bio-content">
-      <div class="bio-left">
-        <img
-        class="bio-avatar"
-        src="assets/profile.webp"
-        alt="Portrait of Apratim Bhattacharyya">
-        <div class="bio-links">
-          <a class="link-scholar" href="https://scholar.google.de/citations?user=SKb4VyUAAAAJ&hl=en">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5v8H8v-5h8v5h4.5V9.5H24z"/></svg>
-            Google Scholar
-          </a>
-          <a class="link-linkedin" href="https://www.linkedin.com/in/apratim-bhattacharyya-1519664a">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <span class="obf-email" aria-label="email address" title="email">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-            &#x202E;moc.liamg&#x40;hbmitarpa
-          </span>
-        </div>
-      </div>
+    <p class="eyebrow">Research Blog</p>
 
-      <p class="bio-text">
-        I am a Staff Machine Learning Researcher at Qualcomm AI Research. My research interests lie in
-        the areas of Neural Reasoning, Embodied Systems and Generative Models. Previously,
-        I was a Postdoc at the University of Tuebingen working in the Autonomous Vision Group under Prof. Dr. Andreas Geiger.
-        Before that I was a PhD student at the Max Planck Institut für Informatik, Saarbrücken,
-        advised by Prof. Dr. Bernt Schiele and Prof. Dr. Mario Fritz. I completed my Master’s Thesis at Saarland University under the supervision of
-        Dr. Jilles Vreeken in the area of Algorithmic Data Mining and my Bachelors degree
-        at the National Institute of Technology, Karnataka, India.
-      </p>
+    <h1>Interactive Task Guidance as a Testbed for Multimodal Intelligence</h1>
+
+    <p class="subtitle">
+      From turn-based multimodal chat to real-world, always-on assistance.
+    </p>
+
+    <div class="meta">
+      <span>April 2026</span>
+      <span>·</span>
+      <span>Multimodal AI</span>
+      <span>·</span>
+      <span>Streaming Video Understanding</span>
     </div>
-  </section>
 
-    <!-- ===== News ===== -->
-    <section id="news">
-      <h2>News</h2>
-      <ul class="news-list">
-        <li><span class="news-date">09/03/2026</span><span class="news-text"><a href="https://apratimbh.github.io/whatandwhen/">Blog post</a> arguing for interactive task guidance as a testbed for real-world multimodal intelligence.</span></li>
-        <li><span class="news-date">09/03/2026</span><span class="news-text">Consolidated page for CVPR 2026 challenges which uses QEVD <a href="https://apratimbh.github.io/whatandwhen/">here</a>.</span></li>
-        <li><span class="news-date">01/03/2026</span><span class="news-text">Presenting <a href="https://apratimbh.github.io/livecook/">Qualcomm Live Cooking Dataset</a> at ICBINB and MMIntelligence @ ICLR 2026.</span></li>
-        <li><span class="news-date">31/01/2026</span><span class="news-text">One paper accepted to ICRA 2026.</span></li>
-        <li><span class="news-date">26/01/2026</span><span class="news-text">Two papers accepted to ICLR 2026.</span></li>
-        <li><span class="news-date">21/12/2025</span><span class="news-text">Organizing the 2nd Workshop on <a href="http://varworkshop.github.io/">Vision-based Assistants in the Real-World</a> at CVPR 2026.</span></li>
-        <li><span class="news-date">21/12/2025</span><span class="news-text">Co-organizing the 2026 IEEE <a href="https://lpcv.ai/">Low Power Computer Vision Challenge</a> at CVPR 2026.</span></li>
-        <li><span class="news-date">02/12/2025</span><span class="news-text"><a href="https://apratimbh.github.io/livecook/">Qualcomm Live Cooking Dataset</a> to be presented at NeurIPS 2025.</span></li>
-      </ul>
+    <p>
+      State-of-the-art multimodal LLMs are impressive but most of them still
+      operate in a fundamentally turn-based way: they respond
+      only when prompted. That works well for many text- and
+      image-based tasks, but it is not how intelligence works in the real world.
+      From birds to dogs, animals interact with their environments continuously, 
+      integrating multimodal sensory inputs and selecting actions in real time.
+      Replicating this kind of continuous perception and action in AI would be an important step toward AGI 
+      and general-purpose robotics, since real-world intelligence requires intelligent agents to 
+      perceive, reason, and act over continuous streams of multimodal input. 
+    </p>
 
-    <!-- ===== Publications ===== -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <ol class="pub-list">
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/notes_to_self_icra_2026.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Sanjay Haresh, Daniel Dijkman, <strong>Apratim Bhattacharyya</strong>, Roland Memisevic</span>
-            <span><em><strong>Notes-to-Self: Scratchpad Augmented VLAs for Memory Dependent Manipulation Tasks.</strong></em></span>
-            <span>ICRA, 2026.</span>
-            <span><a href="https://arxiv.org/pdf/2602.21013">Paper</a></span>
-          </div>
-        </li>
-        
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/gero_arxiv_2026.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, <strong>Apratim Bhattacharyya</strong>, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai</span>
-            <span><em><strong>Generative Scenario Rollouts for End-to-End Autonomous Driving.</strong></em></span>
-            <span>arXiv, 2026.</span>
-            <span><a href="https://arxiv.org/pdf/2601.11475">Paper</a></span>
-          </div>
-        </li>
-        
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/qivd_2025.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Reza Pourreza, Rishit Dagli, <strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Guillaume Berger, Roland Memisevic</span>
-            <span><em><strong>Can Vision-Language Models Answer Face to Face Questions in the Real-World?</strong></em></span>
-            <span>ICLR, 2026.</span>
-            <span><a href="https://arxiv.org/pdf/2503.19356">Paper</a>; <a href="https://www.qualcomm.com/developer/software/qualcomm-interactive-video-dataset-qivd">Dataset</a></span>
-          </div>
-        </li>
+    <h2>From turn-based chat to always-on multimodal assistance</h2>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/noise_2025.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Litian Liu, Reza Pourreza, Sunny Panchal, <strong>Apratim Bhattacharyya</strong>, Yao Qin, Roland Memisevic</span>
-            <span><em><strong>Enhancing Hallucination Detection through Noise Injection.</strong></em></span>
-            <span>ICLR, 2026.</span>
-            <a href="https://arxiv.org/pdf/2502.03799">Paper</a>
-          </div>
-        </li>
-        
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/livecook_neurips_2025.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya*</strong>, Bicheng Xu*, Sanjay Haresh, Reza Pourreza, Litian Liu, Sunny Panchal, Leonid Sigal, Roland Memisevic</span>
-            <span><em><strong>Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?</strong></em> (*joint first authorship)</span>
-            <span>NeurIPS, 2025.</span>
-            <span><a href="https://arxiv.org/pdf/2511.21998">Paper</a>; <a href="https://apratimbh.github.io/livecook/">Project Page</a>; <a href="https://github.com/varworkshop/ai_coach_cooking_2026">Dataset Quick Start Guide</a></span>
-          </div>
-        </li>
+    <p>
+      This shift is already visible in frontier systems. Google’s
+      Gemini Live adds real-time spoken interaction together
+      with camera and screen sharing, while Project Astra
+      explores a broader “universal assistant” vision with multimodal memory,
+      tool use, action-taking, and proactive responses.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/roca_2025.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Rajeev Yasarla, Shizhong Han, Hsin-Pai Cheng, Litian Liu, Shweta Mahajan, <strong>Apratim Bhattacharyya</strong>, Yunxiao Shi, Risheek Garrepalli, Hong Cai, Fatih Porikli</span>
-            <span><em><strong>RoCA: Robust Cross-Domain End-to-End Autonomous Driving.</strong></em></span>
-            <span>arXiv, 2025.</span>
-            <a href="https://arxiv.org/pdf/2506.10145">Paper</a>
-          </div>
-        </li>
+    <p>
+      But today’s frontier models are still largely limited to
+      user-initiated conversations: you “Go Live,” speak, and get spoken
+      responses. That is still different from a truly always-on assistant that
+      decides for itself when to intervene.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/dima_cvpr_2025.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Deepti Hegde, Rajeev Yasarla, Hong Cai, Shizhong Han, <strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Litian Liu, Risheek Garrepalli, Vishal M Patel, Fatih Porikli</span>
-            <span><em><strong>Distilling Multi-modal Large Language Models for Autonomous Driving.</strong></em></span>
-            <span>CVPR, 2025.</span>
-            <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf">Paper</a>
-          </div>
-        </li>
+    <h2>Gemini Live / Project Astra style interaction</h2>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/qevd_neurips_2024.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Sunny Panchal* , <strong>Apratim Bhattacharyya*</strong>, Guillaume Berger, Antoine Mercier, Cornelius Böhm, Florian Dietrichkeit, Reza Pourreza, Xuanlin Li, Pulkit Madan, Mingu Lee, Mark Todorovich, Ingo Bax, Roland Memisevic</span>
-            <span><em><strong>What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction.</strong></em>(*joint first authorship)</span>
-            <span>NeurIPS (D&B Track), 2024.</span>
-            <span><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/8aa695b5d6bf9e958d4e56b22c9b859d-Paper-Datasets_and_Benchmarks_Track.pdf">Paper</a>; <a href="https://www.qualcomm.com/developer/software/qevd-dataset">Data</a>; <a href="https://github.com/Qualcomm-AI-research/FitCoach">Code</a>; <a href="https://apratimbh.github.io/whatandwhen">Dataset Quick Start Guide</a></span>
-          </div>
-        </li>
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/RN2ps4327G0"
+        title="Gemini Live demo video"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/clevrskills_neurips_2024.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Sanjay Haresh, Daniel Dijkman, <strong>Apratim Bhattacharyya</strong>, Roland Memisevic</span>
-            <span><em><strong>ClevrSkills: Compositional Language and Visual Reasoning in Robotics.</strong></em></span>
-            <span>NeurIPS (D&B Track), 2024.</span>
-            <span><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/439539557e9ba0d04055773ff1f3241c-Paper-Datasets_and_Benchmarks_Track.pdf">Paper</a>; <a href="https://www.qualcomm.com/developer/software/clevrskills-dataset">Data</a>; <a href="https://github.com/Qualcomm-AI-research/ClevrSkills">Code</a></span>
-          </div>
-        </li>
+    <p class="caption">
+      Gemini Live demonstrates fluent, voice-first multimodal interaction grounded in live visual context.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/lrr_iclr_2024.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Mingu Lee, Reza Pourreza, Pulkit Madan, Roland Memisevic</span>
-            <span><em><strong>Look, Remember and Reason: Grounded Reasoning in Videos with Language Models.</strong></em></span>
-            <span>ICLR, 2024.</span>
-            <a href="https://arxiv.org/pdf/2306.17778">Paper</a>
-          </div>
-        </li>
+    <h2>Streaming benchmarks are advancing fast</h2>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/painter_iccv_2023.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Reza Pourreza, <strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Mingu Lee, Pulkit Madan, Roland Memisevic</span>
-            <span><em><strong>Painter: Teaching Auto-regressive Language Models to Draw Sketches.</strong></em></span>
-            <span>ICCV Workshops, 2023.</span>
-            <span><a href="https://openaccess.thecvf.com/content/ICCV2023W/MMFM/html/Pourreza_Painter_Teaching_Auto-Regressive_Language_Models_to_Draw_Sketches_ICCVW_2023_paper.html">Paper</a></span>
-          </div>
-        </li>
+    <p>
+      Academic work has been moving quickly as well. Two especially useful
+      trackers are <strong>Awesome Streaming Video Understanding</strong> and
+      <strong>Awesome Streaming LLMs</strong>, which curate models, methods,
+      datasets, and taxonomies for this rapidly growing area.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/king_eccv_2022.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Niklas Hanselmann, Katrin Renz, Kashyap Chitta, <strong>Apratim Bhattacharyya</strong>, Andreas Geiger</span>
-            <span><em><strong>KING: Generating Safety-Critical Driving Scenarios for Robust Imitation via Kinematics Gradients.</strong></em></span>
-            <span>ECCV, 2022. <strong>(Oral)</strong></span>
-            <span><a href="https://arxiv.org/pdf/2204.13683">Paper</a>; <a href="https://lasnik.github.io/king/">Project Page</a></span>
-          </div>
-        </li>
+    <p>
+      At the benchmark level, three influential recent efforts are
+      <strong>StreamingBench</strong>, <strong>OVO-Bench</strong>, and
+      <strong>RIVER</strong> (among others). Together, these benchmarks move beyond offline
+      video QA toward temporally grounded, streaming interaction.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/europvi_cvpr_2021.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Daniel O. Reino, Mario Fritz, Bernt Schiele</span>
-            <span><em><strong>Euro-PVI: Pedestrian Vehicle Interactions in Dense Urban Centers.</strong></em></span>
-            <span>CVPR, 2021.</span>
-            <span><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhattacharyya_Euro-PVI_Pedestrian_Vehicle_Interactions_in_Dense_Urban_Centers_CVPR_2021_paper.pdf">Paper</a>; <a href="http://europvi.mpi-inf.mpg.de/">Data</a>; <a href="https://github.com/apratimbhattacharyya18/jbcvae">Code</a></span>
-            <span>Contact me via LinkedIn/email to resolve any access issues (check bottom of page).</span>
-          </div>
-        </li>
+    <h2>What these benchmarks actually test</h2>
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="/assets/blogs/interactive-task-guidance/ovo_bench_online_offline.jpg"
+        alt="OVO-Bench online timeline showing forward, backward, and real-time query windows."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        OVO-Bench online evaluation setup: forward active responding, backward tracing, and real-time visual perception.
+        Source: <a href="https://arxiv.org/pdf/2501.05510" target="_blank" rel="noopener">arXiv</a>.
+      </figcaption>
+    </figure>
+    <p>
+      Tasks in these benchmarks can be broadly divided into:
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/hbaflow_gcpr_2020.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Christoph-Nikolas Straehle, Mario Fritz, Bernt Schiele</span>
-            <span><em><strong>Haar Wavelet based Block Autoregressive Flows for Trajectories.</strong></em></span>
-            <span>GCPR, 2020. <strong>(Oral)</strong></span>
-            <a href="https://arxiv.org/abs/2009.09878">Paper</a>
-          </div>
-        </li>
+    <p>
+      <strong>Understanding current events</strong>: tests the ability to interpret
+      what is happening right now from the current stream. In
+      OVO-Bench, this appears as "Real-Time Visual Perception",
+      which covers objects, actions, attributes, OCR, spatial relationships, and
+      immediate online-style questions.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/marscf_cvpr_2020.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya*</strong>, Shweta Mahajan* , Mario Fritz, Bernt Schiele, Stefan Roth</span>
-            <span><em><strong>Normalizing Flows with Multiscale Autoregressive Priors.</strong></em> (*joint first authorship)</span>
-            <span>CVPR, 2020.</span>
-            <span><a href="https://arxiv.org/pdf/2004.03891">Paper</a>; <a href="https://github.com/visinf/mar-scf">Code</a></span>
-          </div>
-        </li>
+    <p>
+      <strong>Recalling past events</strong>: test the ability to recover
+      information that is no longer visible. OVO-Bench’s
+      “Backward Tracing” makes this concrete with examples like
+      “Who did I communicate to when chopping egg plants?”, “What did I drop in
+      the bowl in the sink?”, and “What food did I chop?”
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/upleak_usenix_2020.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span>Ahmed Salem, <strong>Apratim Bhattacharyya</strong>, Michael Backes, Mario Fritz, Yang Zhang</span>
-            <span><em><strong>Updates-Leak: Data Set Inference and Reconstruction Attacks in Online Learning.</strong></em></span>
-            <span>USENIX Security, 2020.</span>
-            <a href="https://www.usenix.org/system/files/sec20-salem.pdf">Paper</a>
-          </div>
-        </li>
+    <p>
+      <strong>Tracking future events</strong>: tests the ability to keep monitoring
+      until a relevant event actually happens. In OVO-Bench,
+      “Forward Active Responding” includes tasks like
+      Repetition Event Count and
+      Sequential Steps Recognition, where the correct behavior
+      is continued observation followed by a response at the right moment.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/cfvae_neurips_2019.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Michael Hanselmann, Mario Fritz, Bernt Schiele, Christoph-Nikolas Straehle</span>
-            <span><em><strong>Conditional Flow Variational Autoencoders for Structured Sequence Prediction.</strong></em></span>
-            <span>ML4AD @ NeurIPS, 2019. <strong>(Oral)</strong></span>
-            <a href="https://arxiv.org/abs/1908.09008">Paper</a>
-          </div>
-        </li>
+    <p>
+      <strong>Knowing “when to say”</strong>: tests the ability to decide whether to
+      answer now or wait for more evidence. OVO-Bench’s
+      “Clues Reveal Responding” captures this especially well:
+      the model should stay silent until enough visual evidence has accumulated
+      to support a correct response.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/synlikelihood_iclr_2019.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Mario Fritz, Bernt Schiele</span>
-            <span><em><strong>Bayesian Prediction of Future Street Scenes using Synthetic Likelihoods.</strong></em></span>
-            <span>ICLR, 2019.</span>
-            <span><a href="https://arxiv.org/pdf/1810.00746">Paper</a>; <a href="https://github.com/apratimbhattacharyya18/seg_pred">Code + Data</a></span>
-          </div>
-        </li>
+    <h2>But real-world intelligence is harder than benchmark skills in isolation</h2>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/bmscvae_cvpr_2018.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Bernt Schiele, Mario Fritz</span>
-            <span><em><strong>Accurate and Diverse Sampling of Sequences based on a ‘Best of Many’ Sample Objective.</strong></em></span>
-            <span>CVPR, 2018. <strong>(Oral)</strong></span>
-            <span><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Accurate_and_Diverse_CVPR_2018_paper.pdf">Paper</a>; <a href="https://github.com/apratimbhattacharyya18/CGM_BestOfMany">Code</a></span>
-          </div>
-        </li>
+    <p>
+      These benchmark capabilities are important, but they are
+      evaluated in relative isolation. Real-world tasks usually require several
+      of them <strong>at once</strong>: understanding the present, remembering
+      past progress, anticipating what comes next, detecting when something has
+      gone wrong.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/longtermonboard_cvpr_2018.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Mario Fritz, Bernt Schiele</span>
-            <span><em><strong>Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty.</strong></em></span>
-            <span>CVPR, 2018.</span>
-            <span><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.pdf">Paper</a>; <a href="https://github.com/apratimbhattacharyya18/onboard_long_term_prediction">Code + Data</a></span>
-          </div>
-        </li>
+    <p>
+      Recent work reinforces how much room there still is to improve evaluation.
+      In particular, <strong>SimpleStream</strong> very recently showed that an off-the-shelf
+      VLM using only a tiny sliding window of recent frames can already match or
+      beat many specialized streaming models. That suggests current benchmarks
+      are useful, but still not yet sufficient stress tests for real-world multimodal intelligence.
+    </p>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/boundary_aaai_2018.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Mateusz Malinowski, Bernt Schiele, Mario Fritz</span>
-            <span><em><strong>Long Term Image Boundary Prediction.</strong></em></span>
-            <span>AAAI, 2018.</span>
-            <a href="https://ojs.aaai.org/index.php/AAAI/article/download/11811/11670">Paper</a>
-          </div>
-        </li>
+    <h2>Interactive task guidance: a stronger and more realistic testbed</h2>
 
-        <li>
-          <div class="pub-img-wrapper">
-            <img src="assets/squish_sdm_2017.jpg" alt="Paper Thumbnail">
-          </div>
-          <div class="pub-details">
-            <span><strong>Apratim Bhattacharyya</strong>, Jilles Vreeken</span>
-            <span><em><strong>Efficiently Summarising Event Sequences with Rich Interleaving Patterns.</strong></em></span>
-            <span>SDM, 2017.</span>
-            <a href="https://epubs.siam.org/doi/pdf/10.1137/1.9781611974973.89">Paper</a>
-          </div>
-        </li>
-    </section>
+    <p>
+      A particularly compelling next step is
+      <strong>interactive task guidance</strong>: benchmarks where an AI system
+      must guide a person through a real-world task such as a fitness routine or
+      a recipe, providing instructions, checking progress, and intervening when
+      mistakes occur.
+    </p>
 
+    <p>
+      This setup naturally combines perception, memory, anticipation, temporal
+      grounding, and proactive communication in one unified problem. It is much
+      closer to the challenges of the real-world.
+    </p>
 
+    <video autoplay muted loop playsinline controls class="local-video">
+      <source src="/assets/blogs/interactive-task-guidance/fit_coach_web.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      This is the motivation behind the <strong>Qualcomm Exercise Videos Benchmark and Dataset</strong>
+      (NeurIPS 2024), which introduced fitness coaching as a benchmark for
+      situated interaction. The key challenge is not just understanding human
+      motion, but recognizing mistakes and delivering the <em>right</em>
+      feedback at the <em>right</em> time, as the activity unfolds.
+    </p>
+
+    <video autoplay muted loop playsinline controls class="local-video">
+      <source src="/assets/blogs/interactive-task-guidance/qualcomm_interactive_cooking_benchmark_web.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      This theme continues in <strong>Qualcomm Interactive Cooking Benchmark and Dataset</strong>
+      (NeurIPS 2025). This benchmark requires
+      models to guide a person through a recipe: providing the next instruction, detecting
+      successful completion, identifing mistakes, and issuing corrective feedback at the right moment.
+    </p>
+    
+
+    <h2>Why this matters</h2>
+
+    <p>
+      Guiding a person through a real-world task is one of the cleanest
+      testbeds we have for benchmarking multimodal intelligence with continuous sensory inputs.
+      Such benchmarks would not only enable future interactive assistants 
+      running on personal devices such as phones and smart glasses but also test capabilities 
+      we eventually want in embodied agents and household robots. 
+      It is also particularly appealing as a testbed for multimodal embodied intelligence because 
+      it convinently disentangles thinking from acting: the model provides
+      the intelligence and guidance, while the human is the action expert
+      executing the task.
+    </p>
+
+    <hr />
+
+    <h2>References</h2>
+
+    <ol class="references">
+      <li>
+        Google. <span class="ref-title">Gemini Live — get real-time voice assistance from Gemini.</span>
+        Product page, 2026.
+        <a href="https://gemini.google/overview/gemini-live/" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Google DeepMind. <span class="ref-title">Project Astra.</span>
+        Research prototype overview, 2026.
+        <a href="https://deepmind.google/models/project-astra/" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        CNET. <span class="ref-title">Google demos “Gemini Live” AI Android voice chatbot.</span>
+        YouTube video, August 13, 2024.
+        <a href="https://www.youtube.com/watch?v=RN2ps4327G0" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Lin, J., Fang, Z., Chen, C., Wan, Z., Luo, F., Li, P., Liu, Y., and Sun, M.
+        <span class="ref-title">StreamingBench: Assessing the Gap for MLLMs to Achieve Streaming Video Understanding.</span>
+        <em>arXiv preprint arXiv:2411.03628</em>, 2024.
+        <a href="https://arxiv.org/abs/2411.03628" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Li, Y., Niu, J., Miao, Z., Ge, C., Zhou, Y., He, Q., Dong, X., Duan, H., Ding, S., Qian, R., Zhang, P., Zang, Y., Cao, Y., He, C., and Wang, J.
+        <span class="ref-title">OVO-Bench: How Far is Your Video-LLMs from Real-World Online Video Understanding?</span>
+        <em>CVPR</em>, 2025.
+        <a href="https://arxiv.org/pdf/2501.05510" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Shi, Y., Zhao, Q., Jiang, T., Zeng, X., Wang, Y., and Wang, L.
+        <span class="ref-title">RIVER: A Real-Time Interaction Benchmark for Video LLMs.</span>
+        <em>arXiv preprint arXiv:2603.03985</em>, 2026.
+        <a href="https://arxiv.org/abs/2603.03985" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Shen, Y., Tian, S., Yang, J., and Liu, Z.
+        <span class="ref-title">A Simple Baseline for Streaming Video Understanding.</span>
+        <em>arXiv preprint arXiv:2604.02317</em>, 2026.
+        <a href="https://arxiv.org/pdf/2604.02317" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Panchal, S., Bhattacharyya, A., Berger, G., Mercier, A., Böhm, C., Dietrichkeit, F., Pourreza, R., Li, X., Madan, P., Lee, M., Todorovich, M., Bax, I., and Memisevic, R.
+        <span class="ref-title">What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction.</span>
+        <em>NeurIPS Datasets and Benchmarks Track</em>, 2024.
+        <a href="https://arxiv.org/abs/2407.08101" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li>
+        Bhattacharyya, A., Xu, B., Haresh, S., Pourreza, R., Liu, L., Panchal, S., Sigal, L., and Memisevic, R.
+        <span class="ref-title">Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?</span>
+        <em>NeurIPS</em>, 2025.
+        <a href="https://arxiv.org/pdf/2511.21998" target="_blank" rel="noopener">Link</a>
+      </li>
+    </ol>
   </main>
-
-  <footer>
-  </footer>
 </body>
 </html>
