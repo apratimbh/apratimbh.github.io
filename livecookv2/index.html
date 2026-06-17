@@ -29,10 +29,6 @@
 
             <p class="caption">Qualcomm AI Research, York University, Vector Institute for AI</p>
 
-            <div class="conference">
-                <span class="conf-name">arXiv 2026</span>
-            </div>
-
             <div class="links">
                 <a href="https://arxiv.org/abs/2606.09547" class="btn"><i class="fas fa-file-pdf"></i> Paper</a>
                 <a href="https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval" class="btn"><i class="fab fa-github"></i> Eval Code</a>
@@ -52,13 +48,16 @@
         <section class="section video-section">
             <h2 class="section-title">Ego-MC-Bench: Mistake Corrections</h2>
             <div class="video-container">
-                <video controls poster="assets/teaser_poster.jpg">
+                <video autoplay muted loop playsinline controls poster="assets/teaser_poster.jpg">
                     <source src="assets/teaser.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <p class="abstract-text">
                 Ego-MC-Bench evaluates whether AI assistants can intervene at the right time and with the right feedback to prevent mistakes. The benchmark contains expert-provided instruction-feedback pairs in real-world kitchen scenarios, testing both <strong>when</strong> an intervention should happen and <strong>what</strong> the assistant should say.
+            </p>
+            <p class="abstract-text">
+                <strong>Recording Setup.</strong> Ego-MC-Bench is collected in real kitchen scenarios with expert-provided interventions. The setup captures user actions from complementary viewpoints so that mistakes can be timestamped as soon as they become apparent.
             </p>
         </section>
 
@@ -69,16 +68,6 @@
             </div>
             <p class="abstract-text">
                 Current state-of-the-art video LLMs show very poor mistake intervention capabilities. Even Gemini-3-Flash reaches a mistake intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge of detecting mistakes at the right time while producing useful corrective feedback.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Recording Setup</h2>
-            <div class="figure-container">
-                <img src="assets/recording_setup.jpeg" class="figure-image" alt="Recording setup for Ego-MC-Bench">
-            </div>
-            <p class="abstract-text">
-                Ego-MC-Bench is collected in real kitchen scenarios with expert-provided interventions. The setup captures user actions from complementary viewpoints so that mistakes can be timestamped as soon as they become apparent.
             </p>
         </section>
 
