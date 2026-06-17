@@ -1,1 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project page for Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?">
+    <title>Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    
+</head>
+<body>
 
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="paper-title">Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</h1>
+
+            <div class="authors">
+                <span class="author">Apratim Bhattacharyya</span>
+                <span class="author">Shweta Mahajan</span>
+                <span class="author">Sanjay Haresh</span>
+                <span class="author">Rajeev Yasarla</span>
+                <span class="author">Reza Pourreza</span>
+                <span class="author">Litian Liu</span>
+                <span class="author">Risheek Garrepalli</span>
+                <span class="author">Roland Memisevic</span>
+            </div>
+
+            <p class="caption">Qualcomm AI Research, York University, Vector Institute for AI</p>
+
+            <div class="conference">
+                <span class="conf-name">arXiv 2026</span>
+            </div>
+
+            <div class="links">
+                <a href="https://arxiv.org/abs/2606.09547" class="btn"><i class="fas fa-file-pdf"></i> Paper</a>
+                <a href="https://arxiv.org/html/2606.09547v1" class="btn"><i class="fas fa-globe"></i> HTML</a>
+                <a href="https://x.com/apratimbh/status/2064448134927827262" class="btn"><i class="fab fa-twitter"></i> Thread</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section abstract-section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract-text">
+                Learning everyday skills, like cooking a dish, relies increasingly on instructional media such as online videos. This opens the door to the use of video and multimodal large language models as task guidance assistants. A crucial capability for real-world task guidance is the ability to intervene proactively as soon as a mistake is apparent. To evaluate this capability, we introduce <strong>Ego-MC-Bench</strong> (Mistake Corrections), a benchmark for reactive, step-by-step task guidance in realistic cooking scenarios. Extensive experiments show that Ego-MC-Bench is highly challenging for state-of-the-art video LLMs. To address the lack of training data for this task, we introduce <strong>Ego-CoMist</strong>, a counterfactual synthetic dataset created by transforming non-interactive cooking videos into supervised examples showing proactive interventions. Fine-tuning on Ego-CoMist yields gains, especially for smaller and more efficient video LLMs well suited for assistance on edge devices.
+            </p>
+        </section>
+
+        <section class="section video-section">
+            <h2 class="section-title">Ego-MC-Bench: Mistake Corrections</h2>
+            <div class="video-container">
+                <video controls poster="assets/teaser_poster.jpg">
+                    <source src="assets/teaser.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="abstract-text">
+                Ego-MC-Bench evaluates whether AI assistants can intervene at the right time and with the right feedback to prevent mistakes. The benchmark contains expert-provided instruction-feedback pairs in real-world kitchen scenarios, testing both <strong>when</strong> an intervention should happen and <strong>what</strong> the assistant should say.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Why This Is Hard</h2>
+            <div class="figure-container">
+                <img src="assets/f1_sota.jpg" class="figure-image" alt="F1 scores for state-of-the-art video LLMs on Ego-MC-Bench">
+            </div>
+            <p class="abstract-text">
+                Current state-of-the-art video LLMs show very poor mistake intervention capabilities. Even Gemini-3-Flash reaches a mistake intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge of detecting mistakes at the right time while producing useful corrective feedback.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Recording Setup</h2>
+            <div class="figure-container">
+                <img src="assets/recording_setup.jpeg" class="figure-image" alt="Recording setup for Ego-MC-Bench">
+            </div>
+            <p class="abstract-text">
+                Ego-MC-Bench is collected in real kitchen scenarios with expert-provided interventions. The setup captures user actions from complementary viewpoints so that mistakes can be timestamped as soon as they become apparent.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Ego-CoMist: Counterfactual Mistakes</h2>
+            <div class="figure-container">
+                <img src="assets/counterfactual_example_1.jpg" class="figure-image" alt="Counterfactual mistake annotation in Ego-CoMist">
+            </div>
+            <p class="abstract-text">
+                A major bottleneck is the lack of appropriate procedural activity videos with mistakes, despite the abundance of cooking and instructional video datasets. Ego-CoMist addresses this by transforming non-interactive cooking videos into supervised examples with counterfactual mistakes and corrective feedback.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Fine-Tuning Improves Intervention</h2>
+            <div class="figure-container">
+                <img src="assets/f1_egocomist.jpg" class="figure-image" alt="F1 score gains from fine-tuning on Ego-CoMist plus">
+            </div>
+            <p class="abstract-text">
+                Fine-tuning on Ego-CoMist+ significantly improves mistake intervention capabilities. Qwen3.5-2B reaches an F1 score of 0.20 on per-recipe steps, showing strong gains for small models that are practical for low-latency and edge-deployed assistants.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Streaming Evaluation on Ego-MC-Bench</h2>
+            <div class="table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th class="no-border"></th>
+                            <th class="header-group">Instruction</th>
+                            <th class="header-group" colspan="5">Mistake</th>
+                        </tr>
+                        <tr class="header-row-bottom">
+                            <th class="col-method">Method</th>
+                            <th>IC-Acc &uarr;</th>
+                            <th>Prec. &uarr;</th>
+                            <th>Rec. &uarr;</th>
+                            <th>F1 &uarr;</th>
+                            <th>BERT &uarr;</th>
+                            <th>ROUGE-L &uarr;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Per-recipe step</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">InternVL3.5-38B</td>
+                            <td>3.9</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen2.5-VL-32B</td>
+                            <td>27.3</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3-VL-8B</td>
+                            <td>30.7</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">VideoLLaMA3-7B</td>
+                            <td>31.8</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-2B</td>
+                            <td>0.0</td>
+                            <td>0.02</td>
+                            <td>0.29</td>
+                            <td>0.04</td>
+                            <td>0.184</td>
+                            <td>0.130</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-9B</td>
+                            <td>6.1</td>
+                            <td>0.07</td>
+                            <td>0.33</td>
+                            <td>0.11</td>
+                            <td>0.201</td>
+                            <td>0.137</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-27B</td>
+                            <td><strong>45.5</strong></td>
+                            <td>0.12</td>
+                            <td>0.17</td>
+                            <td>0.14</td>
+                            <td><em>0.206</em></td>
+                            <td><em>0.137</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3-VL-32B</td>
+                            <td>6.8</td>
+                            <td>0.10</td>
+                            <td><strong>0.34</strong></td>
+                            <td>0.16</td>
+                            <td>0.068</td>
+                            <td>0.092</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Videollm-online</td>
+                            <td>2.7</td>
+                            <td>0.02</td>
+                            <td>0.38</td>
+                            <td>0.05</td>
+                            <td>0.265</td>
+                            <td>0.201</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">LiveCC</td>
+                            <td>1.6</td>
+                            <td>0.03</td>
+                            <td><strong>0.43</strong></td>
+                            <td>0.06</td>
+                            <td>0.248</td>
+                            <td>0.196</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Gemini-2.5-Flash</td>
+                            <td>24.6</td>
+                            <td>0.17</td>
+                            <td>0.20</td>
+                            <td><strong>0.18</strong></td>
+                            <td>0.180</td>
+                            <td>0.135</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">Gemini-3-Flash</td>
+                            <td>32.7</td>
+                            <td><strong>0.18</strong></td>
+                            <td>0.18</td>
+                            <td><strong>0.18</strong></td>
+                            <td>0.126</td>
+                            <td>0.102</td>
+                        </tr>
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Full recipes</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-27B</td>
+                            <td><strong>30.3</strong></td>
+                            <td><strong>0.05</strong></td>
+                            <td>0.13</td>
+                            <td>0.07</td>
+                            <td><em>0.201</em></td>
+                            <td><em>0.136</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3-VL-32B</td>
+                            <td>6.8</td>
+                            <td>0.04</td>
+                            <td><strong>0.28</strong></td>
+                            <td>0.07</td>
+                            <td>0.061</td>
+                            <td>0.090</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">Gemini-3-Flash</td>
+                            <td>10.6</td>
+                            <td><strong>0.05</strong></td>
+                            <td>0.20</td>
+                            <td><strong>0.08</strong></td>
+                            <td>0.097</td>
+                            <td>0.091</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="abstract-text">
+                Larger proprietary and open models still struggle to intervene reliably, especially when evaluated over full recipes where errors can compound across steps.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Fine-Tuned Model Evaluation</h2>
+            <div class="table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th class="no-border"></th>
+                            <th class="header-group">Instruction</th>
+                            <th class="header-group" colspan="5">Mistake</th>
+                        </tr>
+                        <tr class="header-row-bottom">
+                            <th class="col-method">Method</th>
+                            <th>IC-Acc &uarr;</th>
+                            <th>Prec. &uarr;</th>
+                            <th>Rec. &uarr;</th>
+                            <th>F1 &uarr;</th>
+                            <th>BERT &uarr;</th>
+                            <th>ROUGE-L &uarr;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Per-recipe step</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">ProAssist</td>
+                            <td>3.0</td>
+                            <td>0.31</td>
+                            <td>0.09</td>
+                            <td>0.14</td>
+                            <td>0.281</td>
+                            <td>0.173</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-2B (QICD)</td>
+                            <td>28.9</td>
+                            <td><strong>0.75</strong></td>
+                            <td>0.05</td>
+                            <td>0.10</td>
+                            <td>0.359</td>
+                            <td>0.218</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-2B (Ego-CoMist)</td>
+                            <td>36.1</td>
+                            <td>0.34</td>
+                            <td>0.11</td>
+                            <td>0.12</td>
+                            <td>0.359</td>
+                            <td>0.229</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3-VL-2B (Ego-CoMist+)</td>
+                            <td>30.4</td>
+                            <td>0.40</td>
+                            <td>0.10</td>
+                            <td>0.16</td>
+                            <td>0.335</td>
+                            <td>0.219</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-0.8B (Ego-CoMist+)</td>
+                            <td>30.5</td>
+                            <td>0.29</td>
+                            <td>0.03</td>
+                            <td>0.06</td>
+                            <td>0.339</td>
+                            <td>0.183</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">Qwen3.5-2B (Ego-CoMist+)</td>
+                            <td><strong>37.1</strong></td>
+                            <td>0.39</td>
+                            <td><strong>0.14</strong></td>
+                            <td><strong>0.20</strong></td>
+                            <td><em>0.444</em></td>
+                            <td><em>0.272</em></td>
+                        </tr>
+                        <tr class="subheader-row">
+                            <td colspan="7"><em>Full recipes</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">ProAssist</td>
+                            <td>0.2</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.000</td>
+                            <td>0.000</td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-2B (QICD)</td>
+                            <td>8.2</td>
+                            <td>0.18</td>
+                            <td>0.04</td>
+                            <td>0.06</td>
+                            <td>0.347</td>
+                            <td>0.161</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td class="method-name">Qwen3.5-2B (Ego-CoMist+)</td>
+                            <td><strong>19.7</strong></td>
+                            <td><strong>0.30</strong></td>
+                            <td><strong>0.08</strong></td>
+                            <td><strong>0.13</strong></td>
+                            <td><em>0.433</em></td>
+                            <td><em>0.278</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="abstract-text">
+                Training with counterfactual mistakes improves both instruction completion and intervention quality. The gains are strongest for efficient 2B-scale models, making Ego-CoMist+ useful for practical assistants.
+            </p>
+        </section>
+
+        <section class="section bibtex-section">
+            <h2 class="section-title">Citation</h2>
+            <pre><code>@article{bhattacharyya2026streaming,
+    title={Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?},
+    author={Bhattacharyya, Apratim and Mahajan, Shweta and Haresh, Sanjay and Yasarla, Rajeev and Pourreza, Reza and Liu, Litian and Garrepalli, Risheek and Memisevic, Roland},
+    journal={arXiv preprint arXiv:2606.09547},
+    year={2026}
+}</code></pre>
+        </section>
+    </main>
+
+</body>
+</html>
