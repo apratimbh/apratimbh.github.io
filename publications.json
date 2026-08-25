@@ -1,0 +1,243 @@
+[
+  {
+    "img": "assets/len_gen_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Pulkit Madan, Sanjay Haresh, Reza Ebrahimi, Sunny Panchal, <strong>Apratim Bhattacharyya</strong>, Roland Memisevic",
+      "<em><strong>On Locality and Length Generalization in Visual Reasoning.</strong></em>",
+      "ECCV, 2026.",
+      "<a href=\"https://arxiv.org/abs/2607.09061\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/ego_mc_bench_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Sanjay Haresh, Rajeev Yasarla, Reza Pourreza, Litian Liu, Risheek Garrepalli, Roland Memisevic",
+      "<em><strong>Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</strong></em>",
+      "arXiv, 2026.",
+      "<a href=\"https://arxiv.org/abs/2606.09547\">Paper</a>; <a href=\"https://apratimbh.github.io/livecookv2/\">Project Page</a>"
+    ]
+  },
+  {
+    "img": "assets/notes_to_self_icra_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Sanjay Haresh, Daniel Dijkman, <strong>Apratim Bhattacharyya</strong>, Roland Memisevic",
+      "<em><strong>Notes-to-Self: Scratchpad Augmented VLAs for Memory Dependent Manipulation Tasks.</strong></em>",
+      "ICRA, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2602.21013\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/roca_2025.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Rajeev Yasarla, Shizhong Han, Hsin-Pai Cheng, <strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Litian Liu, Yunxiao Shi, Risheek Garrepalli, Hong Cai, Fatih Porikli",
+      "<em><strong>RoCA: Robust Cross-Domain End-to-End Autonomous Driving.</strong></em>",
+      "ICML, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2506.10145\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/gero_arxiv_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, <strong>Apratim Bhattacharyya</strong>, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
+      "<em><strong>Generative Scenario Rollouts for End-to-End Autonomous Driving.</strong></em>",
+      "arXiv, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2601.11475\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/qivd_2025.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Reza Pourreza, Rishit Dagli, <strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Guillaume Berger, Roland Memisevic",
+      "<em><strong>Can Vision-Language Models Answer Face to Face Questions in the Real-World?</strong></em>",
+      "ICLR, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2503.19356\">Paper</a>; <a href=\"https://www.qualcomm.com/developer/software/qualcomm-interactive-video-dataset-qivd\">Dataset</a>"
+    ]
+  },
+  {
+    "img": "assets/noise_2025.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Litian Liu, Reza Pourreza, Sunny Panchal, <strong>Apratim Bhattacharyya</strong>, Yao Qin, Roland Memisevic",
+      "<em><strong>Enhancing Hallucination Detection through Noise Injection.</strong></em>",
+      "ICLR, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2502.03799\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/livecook_neurips_2025.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya*</strong>, Bicheng Xu*, Sanjay Haresh, Reza Pourreza, Litian Liu, Sunny Panchal, Leonid Sigal, Roland Memisevic",
+      "<em><strong>Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?</strong></em> (*joint first authorship)",
+      "NeurIPS, 2025.",
+      "<a href=\"https://arxiv.org/pdf/2511.21998\">Paper</a>; <a href=\"https://apratimbh.github.io/livecook/\">Project Page</a>; <a href=\"https://github.com/varworkshop/ai_coach_cooking_2026\">Dataset Quick Start Guide</a>"
+    ]
+  },
+  {
+    "img": "assets/dima_cvpr_2025.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Deepti Hegde, Rajeev Yasarla, Hong Cai, Shizhong Han, <strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Litian Liu, Risheek Garrepalli, Vishal M Patel, Fatih Porikli",
+      "<em><strong>Distilling Multi-modal Large Language Models for Autonomous Driving.</strong></em>",
+      "CVPR, 2025.",
+      "<a href=\"https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/qevd_neurips_2024.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Sunny Panchal*, <strong>Apratim Bhattacharyya*</strong>, Guillaume Berger, Antoine Mercier, Cornelius Böhm, Florian Dietrichkeit, Reza Pourreza, Xuanlin Li, Pulkit Madan, Mingu Lee, Mark Todorovich, Ingo Bax, Roland Memisevic",
+      "<em><strong>What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction.</strong></em> (*joint first authorship)",
+      "NeurIPS (D&amp;B Track), 2024.",
+      "<a href=\"https://proceedings.neurips.cc/paper_files/paper/2024/file/8aa695b5d6bf9e958d4e56b22c9b859d-Paper-Datasets_and_Benchmarks_Track.pdf\">Paper</a>; <a href=\"https://www.qualcomm.com/developer/software/qevd-dataset\">Data</a>; <a href=\"https://github.com/Qualcomm-AI-research/FitCoach\">Code</a>; <a href=\"https://apratimbh.github.io/whatandwhen\">Dataset Quick Start Guide</a>"
+    ]
+  },
+  {
+    "img": "assets/clevrskills_neurips_2024.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Sanjay Haresh, Daniel Dijkman, <strong>Apratim Bhattacharyya</strong>, Roland Memisevic",
+      "<em><strong>ClevrSkills: Compositional Language and Visual Reasoning in Robotics.</strong></em>",
+      "NeurIPS (D&amp;B Track), 2024.",
+      "<a href=\"https://proceedings.neurips.cc/paper_files/paper/2024/file/439539557e9ba0d04055773ff1f3241c-Paper-Datasets_and_Benchmarks_Track.pdf\">Paper</a>; <a href=\"https://www.qualcomm.com/developer/software/clevrskills-dataset\">Data</a>; <a href=\"https://github.com/Qualcomm-AI-research/ClevrSkills\">Code</a>"
+    ]
+  },
+  {
+    "img": "assets/lrr_iclr_2024.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Mingu Lee, Reza Pourreza, Pulkit Madan, Roland Memisevic",
+      "<em><strong>Look, Remember and Reason: Grounded Reasoning in Videos with Language Models.</strong></em>",
+      "ICLR, 2024.",
+      "<a href=\"https://arxiv.org/pdf/2306.17778\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/painter_iccv_2023.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Reza Pourreza, <strong>Apratim Bhattacharyya</strong>, Sunny Panchal, Mingu Lee, Pulkit Madan, Roland Memisevic",
+      "<em><strong>Painter: Teaching Auto-regressive Language Models to Draw Sketches.</strong></em>",
+      "ICCV Workshops, 2023.",
+      "<a href=\"https://openaccess.thecvf.com/content/ICCV2023W/MMFM/html/Pourreza_Painter_Teaching_Auto-Regressive_Language_Models_to_Draw_Sketches_ICCVW_2023_paper.html\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/king_eccv_2022.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Niklas Hanselmann, Katrin Renz, Kashyap Chitta, <strong>Apratim Bhattacharyya</strong>, Andreas Geiger",
+      "<em><strong>KING: Generating Safety-Critical Driving Scenarios for Robust Imitation via Kinematics Gradients.</strong></em>",
+      "ECCV, 2022. <strong>(Oral)</strong>",
+      "<a href=\"https://arxiv.org/pdf/2204.13683\">Paper</a>; <a href=\"https://lasnik.github.io/king/\">Project Page</a>"
+    ]
+  },
+  {
+    "img": "assets/europvi_cvpr_2021.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Daniel O. Reino, Mario Fritz, Bernt Schiele",
+      "<em><strong>Euro-PVI: Pedestrian Vehicle Interactions in Dense Urban Centers.</strong></em>",
+      "CVPR, 2021.",
+      "<a href=\"https://openaccess.thecvf.com/content/CVPR2021/papers/Bhattacharyya_Euro-PVI_Pedestrian_Vehicle_Interactions_in_Dense_Urban_Centers_CVPR_2021_paper.pdf\">Paper</a>; <a href=\"http://europvi.mpi-inf.mpg.de/\">Data</a>; <a href=\"https://github.com/apratimbhattacharyya18/jbcvae\">Code</a>",
+      "Contact via email/LinkedIn to resolve any access issues (check top of page)."
+    ]
+  },
+  {
+    "img": "assets/hbaflow_gcpr_2020.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Christoph-Nikolas Straehle, Mario Fritz, Bernt Schiele",
+      "<em><strong>Haar Wavelet based Block Autoregressive Flows for Trajectories.</strong></em>",
+      "GCPR, 2020. <strong>(Oral)</strong>",
+      "<a href=\"https://arxiv.org/abs/2009.09878\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/marscf_cvpr_2020.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya*</strong>, Shweta Mahajan*, Mario Fritz, Bernt Schiele, Stefan Roth",
+      "<em><strong>Normalizing Flows with Multiscale Autoregressive Priors.</strong></em> (*joint first authorship)",
+      "CVPR, 2020.",
+      "<a href=\"https://arxiv.org/pdf/2004.03891\">Paper</a>; <a href=\"https://github.com/visinf/mar-scf\">Code</a>"
+    ]
+  },
+  {
+    "img": "assets/upleak_usenix_2020.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Ahmed Salem, <strong>Apratim Bhattacharyya</strong>, Michael Backes, Mario Fritz, Yang Zhang",
+      "<em><strong>Updates-Leak: Data Set Inference and Reconstruction Attacks in Online Learning.</strong></em>",
+      "USENIX Security, 2020.",
+      "<a href=\"https://www.usenix.org/system/files/sec20-salem.pdf\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/cfvae_neurips_2019.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Michael Hanselmann, Mario Fritz, Bernt Schiele, Christoph-Nikolas Straehle",
+      "<em><strong>Conditional Flow Variational Autoencoders for Structured Sequence Prediction.</strong></em>",
+      "ML4AD @ NeurIPS, 2019. <strong>(Oral)</strong>",
+      "<a href=\"https://arxiv.org/abs/1908.09008\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/synlikelihood_iclr_2019.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Mario Fritz, Bernt Schiele",
+      "<em><strong>Bayesian Prediction of Future Street Scenes using Synthetic Likelihoods.</strong></em>",
+      "ICLR, 2019.",
+      "<a href=\"https://arxiv.org/pdf/1810.00746\">Paper</a>; <a href=\"https://github.com/apratimbhattacharyya18/seg_pred\">Code + Data</a>"
+    ]
+  },
+  {
+    "img": "assets/bmscvae_cvpr_2018.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Bernt Schiele, Mario Fritz",
+      "<em><strong>Accurate and Diverse Sampling of Sequences based on a ‘Best of Many’ Sample Objective.</strong></em>",
+      "CVPR, 2018. <strong>(Oral)</strong>",
+      "<a href=\"https://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Accurate_and_Diverse_CVPR_2018_paper.pdf\">Paper</a>; <a href=\"https://github.com/apratimbhattacharyya18/CGM_BestOfMany\">Code</a>"
+    ]
+  },
+  {
+    "img": "assets/longtermonboard_cvpr_2018.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Mario Fritz, Bernt Schiele",
+      "<em><strong>Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty.</strong></em>",
+      "CVPR, 2018.",
+      "<a href=\"https://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.pdf\">Paper</a>; <a href=\"https://github.com/apratimbhattacharyya18/onboard_long_term_prediction\">Code + Data</a>"
+    ]
+  },
+  {
+    "img": "assets/boundary_aaai_2018.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Mateusz Malinowski, Bernt Schiele, Mario Fritz",
+      "<em><strong>Long Term Image Boundary Prediction.</strong></em>",
+      "AAAI, 2018.",
+      "<a href=\"https://ojs.aaai.org/index.php/AAAI/article/download/11811/11670\">Paper</a>"
+    ]
+  },
+  {
+    "img": "assets/squish_sdm_2017.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Jilles Vreeken",
+      "<em><strong>Efficiently Summarising Event Sequences with Rich Interleaving Patterns.</strong></em>",
+      "SDM, 2017.",
+      "<a href=\"https://epubs.siam.org/doi/pdf/10.1137/1.9781611974973.89\">Paper</a>"
+    ]
+  }
+]
