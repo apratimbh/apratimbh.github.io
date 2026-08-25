@@ -1,0 +1,46 @@
+[
+  {
+    "date": "18/06/2026",
+    "html": "One paper (provisionally) accepted to ECCV 2026!"
+  },
+  {
+    "date": "08/06/2026",
+    "html": "Just released <a href=\"https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-ego-mistake-corrections\">Ego-MC-Bench</a> and <a href=\"https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes\">Ego-CoMist</a>."
+  },
+  {
+    "date": "30/04/2026",
+    "html": "One paper accepted to ICML 2026."
+  },
+  {
+    "date": "09/03/2026",
+    "html": "<a href=\"https://apratimbh.github.io/blogs/interactive-task-guidance/\">Blog post</a> arguing for interactive task guidance as a testbed for real-world multimodal intelligence."
+  },
+  {
+    "date": "09/03/2026",
+    "html": "Consolidated page for CVPR 2026 challenges which uses QEVD <a href=\"https://apratimbh.github.io/whatandwhen/\">here</a>."
+  },
+  {
+    "date": "01/03/2026",
+    "html": "Presenting <a href=\"https://apratimbh.github.io/livecook/\">Qualcomm Live Cooking Dataset</a> at ICBINB and MMIntelligence @ ICLR 2026."
+  },
+  {
+    "date": "31/01/2026",
+    "html": "One paper accepted to ICRA 2026."
+  },
+  {
+    "date": "26/01/2026",
+    "html": "Two papers accepted to ICLR 2026."
+  },
+  {
+    "date": "21/12/2025",
+    "html": "Organizing the 2nd Workshop on <a href=\"http://varworkshop.github.io/\">Vision-based Assistants in the Real-World</a> at CVPR 2026."
+  },
+  {
+    "date": "21/12/2025",
+    "html": "Co-organizing the 2026 IEEE <a href=\"https://lpcv.ai/\">Low Power Computer Vision Challenge</a> at CVPR 2026."
+  },
+  {
+    "date": "02/12/2025",
+    "html": "<a href=\"https://apratimbh.github.io/livecook/\">Qualcomm Live Cooking Dataset</a> to be presented at NeurIPS 2025."
+  }
+]
