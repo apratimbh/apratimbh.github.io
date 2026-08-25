@@ -42,10 +42,7 @@ header .container {
 h1 {
   font-size: 1.3rem; margin: .2rem 0; font-weight: 700;
   letter-spacing: -0.01em;
-  background: linear-gradient(120deg, var(--fg) 30%, var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--fg);
 }
 
 nav { display: flex; gap: 0.25rem; }
@@ -346,11 +343,6 @@ a:hover { color: var(--link-dark); }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease, opacity 0.2s;
-}
-
-.pub-img-wrapper img:hover {
-  transform: scale(1.04);
 }
 
 .pub-details {
