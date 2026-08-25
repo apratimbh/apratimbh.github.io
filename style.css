@@ -168,6 +168,18 @@ a:hover { color: var(--link-dark); }
   box-shadow: 0 2px 8px rgba(3,105,161,0.15);
 }
 
+/* X (Twitter) — neutral black tint */
+.bio-links .link-x {
+  background: #f4f4f5;
+  color: #18181b;
+  border-color: #e4e4e7;
+}
+.bio-links .link-x:hover {
+  background: #e4e4e7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(24,24,27,0.15);
+}
+
 /* Email pill — gray tint, not clickable */
 .obf-email {
   unicode-bidi: bidi-override;
