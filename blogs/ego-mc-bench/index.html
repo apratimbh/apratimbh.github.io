@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset Suite</title>
+  <meta name="description" content="Why intervention -- not just post-hoc feedback -- is critical for real-world cooking guidance, and how Ego-MC-Bench and Ego-CoMist push AI assistants toward it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="../interactive-task-guidance/styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BMQTPJBF7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BMQTPJBF7Z');
+  </script> -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="home-link" href="/">Apratim Bhattacharyya</a>
+    </div>
+  </header>
+
+  <main class="post">
+    <p class="eyebrow">Research Blog</p>
+
+    <h1>Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset Suite</h1>
+
+    <p class="subtitle">
+      Post-hoc feedback isn't enough. Real-world cooking guidance needs interventions that catch mistakes before they happen.
+    </p>
+
+    <figure class="intro-figure">
+      <img
+        class="intro-image"
+        src="../../assets/blogs/ego-mc-bench/intro-1.jpg"
+        alt="A bowl of noodles, an example of a dish a person might want to learn to cook."
+        loading="eager"
+      />
+    </figure>
+
+    <div class="meta">
+      <span>June 2026</span>
+      <span>·</span>
+      <span>Multimodal AI</span>
+      <span>·</span>
+      <span>Interactive Task Guidance</span>
+    </div>
+
+    <p>
+      What will you do when you want to learn a new task, like making noodles?
+    </p>
+
+    <ul class="references" style="padding-left: 20px; list-style: disc;">
+      <li>Option 1: Learn from an online recipe or a video.</li>
+      <li>Option 2: Use an AI assistant that can provide step-by-step guidance.</li>
+    </ul>
+
+    <p>
+      Read my <a href="https://apratimbh.github.io/blogs/interactive-task-guidance/">other blog post</a> to learn more about task assistance. The AI assistant needs to:
+    </p>
+
+    <ul class="references" style="padding-left: 20px; list-style: disc;">
+      <li>Provide step-by-step instructions.</li>
+      <li>Intervene to prevent mistakes, as many cooking mistakes are irrecoverable.</li>
+    </ul>
+
+    <h2>Intervention: Critical for Cooking Guidance</h2>
+
+    <p>
+      If a mistake is caught too late in the cooking domain, the user must often restart the recipe from scratch &mdash; for example,
+      after adding too much salt to a curry. In domains such as furniture assembly, a missed early intervention is usually
+      less costly, since the step can often be undone afterwards. In cooking, it is critical to intervene in time.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/salt-mistake-example.png"
+        alt="A person about to add too much salt to a bowl, illustrating a moment requiring intervention."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        Instruction: Now add 1/4 teaspoon of salt to the bowl.
+      </figcaption>
+    </figure>
+
+    <p>
+      Here the person is about to add way too much salt. The right time to intervene is before the person adds the salt to the
+      bowl (see above), otherwise the mixture would no longer be useful for the next step of the recipe.
+    </p>
+
+    <h2>Benchmarks: Ego-MC-Bench and Qualcomm Interactive Cooking Dataset</h2>
+
+    <p>
+      To develop real-world AI assistants for cooking guidance, we need reliable benchmarks. Prior work, such as the
+      <a href="https://apratimbh.github.io/livecook/">Qualcomm Interactive Cooking Dataset</a> [NeurIPS 2025], includes
+      post-hoc feedback, which points out mistakes only after they have already occurred. Instead, we need a benchmark
+      where feedback is <em>interventional</em> &mdash; designed to prevent mistakes. Furthermore, the benchmark needs to
+      be collected in a real-world interactive environment, where an expert instructor provides step-by-step instructions
+      and feedback. Thus, we collected <strong>Ego-MC-Bench</strong>: the first benchmark for assessing intervention and
+      guidance capabilities for real-world task guidance.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/ego-mc-bench-example.png"
+        alt="An Ego-MC-Bench example showing a Tofu Curry recipe, with instructions, user actions, and instructor feedback."
+        loading="lazy"
+      />
+    </figure>
+
+    <p>
+      Above, we show an example from <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-ego-mistake-corrections">Ego-MC-Bench</a>, where the instruction is
+      &ldquo;Now, grab 2 tomatoes and dice them into small cubes.&rdquo; The user, however, dices the tomatoes into big
+      cubes. The instructor intervenes, providing feedback that they need to dice the tomatoes into smaller cubes. The
+      user then dices the tomatoes into cubes of the correct size. Next, the user tries to cut more than two tomatoes.
+      The instructor intervenes again, reminding them to cut only two tomatoes &mdash; successfully completing the
+      recipe step. We provide benchmark stats in the <a href="https://arxiv.org/abs/2606.09547">paper</a>.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/sota-intervention-f1.jpeg"
+        alt="F1 scores for state-of-the-art video LLMs on Ego-MC-Bench."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        F1 scores for state-of-the-art video LLMs on Ego-MC-Bench.
+      </figcaption>
+    </figure>
+
+    <p>
+      Evaluation on current state-of-the-art video LLMs shows very poor mistake-intervention capabilities. Even
+      Gemini-3-Flash reaches a mistake-intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge
+      of detecting mistakes at the right time while producing useful corrective feedback. This is because the task
+      combines the challenges of perception, memory, temporal grounding, anticipation, and proactive communication.
+    </p>
+
+    <h2>Ego-CoMist: Training Data</h2>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/ego-comist-example.png"
+        alt="An Ego-CoMist example showing a counterfactual instruction, user actions, and counterfactual feedback."
+        loading="lazy"
+      />
+    </figure>
+
+    <p>
+      To develop real-world AI assistants for cooking guidance, we also need training data. Due to the lack of
+      interventional training data, we generate a synthetic dataset &mdash; <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes"><strong>Ego-CoMist</strong></a>. Built from existing
+      non-interactive datasets, it approximates the Ego-MC-Bench setting by providing feedback at the earliest point a
+      mistake becomes apparent.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/finetuned-intervention-f1.jpeg"
+        alt="F1 score gains from fine-tuning on Ego-CoMist+."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        F1 score gains from fine-tuning on Ego-CoMist+.
+      </figcaption>
+    </figure>
+
+    <p>
+      Finetuning on Ego-CoMist+ significantly improves mistake-intervention capabilities. Qwen3.5-2B reaches an F1 score
+      of 0.20 on per-recipe steps, showing strong gains for small models that are practical for low-latency,
+      edge-deployed assistants.
+    </p>
+
+    <p>
+      <strong>Important note:</strong> Ego-CoMist+ also contains the training set from the Qualcomm Interactive Cooking
+      Dataset. Although not specifically designed for interventions, the Qualcomm Interactive Cooking Dataset training
+      data still helps improve performance.
+    </p>
+
+    <h2>Conclusion</h2>
+
+    <p>
+      Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset both provide a great starting point for research on
+      real-world AI assistants.
+    </p>
+  </main>
+</body>
+</html>
