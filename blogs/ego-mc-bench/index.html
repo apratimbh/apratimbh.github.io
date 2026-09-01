@@ -52,6 +52,11 @@
       <span>Interactive Task Guidance</span>
     </div>
 
+    <video autoplay muted loop playsinline controls class="local-video" poster="../../assets/blogs/ego-mc-bench/teaser_poster.jpg">
+      <source src="../../assets/blogs/ego-mc-bench/teaser.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
     <p>
       What will you do when you want to learn a new task, like making noodles?
     </p>
@@ -62,7 +67,7 @@
     </ul>
 
     <p>
-      Read my <a href="https://apratimbh.github.io/blogs/interactive-task-guidance/">other blog post</a> to learn more about task assistance. The AI assistant needs to:
+      Read my <a href="https://apratimbh.github.io/blogs/interactive-task-guidance/">other blog post</a> to learn more about task assistance &mdash; the AI assistant needs to:
     </p>
 
     <ul class="references" style="padding-left: 20px; list-style: disc;">
@@ -117,12 +122,13 @@
     </figure>
 
     <p>
-      Above, we show an example from <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-ego-mistake-corrections">Ego-MC-Bench</a>, where the instruction is
+      Above, we show an example from <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-ego-mistake-corrections">Ego-MC-Bench</a><sup><a href="#ref-egomcbench">[3]</a></sup>, where the instruction is
       &ldquo;Now, grab 2 tomatoes and dice them into small cubes.&rdquo; The user, however, dices the tomatoes into big
       cubes. The instructor intervenes, providing feedback that they need to dice the tomatoes into smaller cubes. The
       user then dices the tomatoes into cubes of the correct size. Next, the user tries to cut more than two tomatoes.
       The instructor intervenes again, reminding them to cut only two tomatoes &mdash; successfully completing the
-      recipe step. We provide benchmark stats in the <a href="https://arxiv.org/abs/2606.09547">paper</a>.
+      recipe step. We provide benchmark stats in the <a href="https://arxiv.org/abs/2606.09547">paper</a><sup><a href="#ref-paper">[1]</a></sup>,
+      and release the <a href="https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval">evaluation code</a><sup><a href="#ref-code">[2]</a></sup>.
     </p>
 
     <figure class="benchmark-figure">
@@ -146,6 +152,13 @@
 
     <h2>Ego-CoMist: Training Data</h2>
 
+    <p>
+      To develop real-world AI assistants for cooking guidance, we also need training data. Due to the lack of
+      interventional training data, we generate a synthetic dataset &mdash; <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes"><strong>Ego-CoMist</strong></a><sup><a href="#ref-egocomist">[4]</a></sup>. Built from existing
+      non-interactive datasets, it approximates the Ego-MC-Bench setting by providing feedback at the earliest point a
+      mistake becomes apparent.
+    </p>
+
     <figure class="benchmark-figure">
       <img
         class="benchmark-image"
@@ -156,10 +169,9 @@
     </figure>
 
     <p>
-      To develop real-world AI assistants for cooking guidance, we also need training data. Due to the lack of
-      interventional training data, we generate a synthetic dataset &mdash; <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes"><strong>Ego-CoMist</strong></a>. Built from existing
-      non-interactive datasets, it approximates the Ego-MC-Bench setting by providing feedback at the earliest point a
-      mistake becomes apparent.
+      Above, we show an example from Ego-CoMist, where the counterfactual instruction is to measure three tablespoons of
+      flour into the mug. As the user adds a fourth tablespoon, Ego-CoMist steps in with counterfactual feedback at
+      exactly that point &mdash; before the mistake is made.
     </p>
 
     <figure class="benchmark-figure">
@@ -192,6 +204,34 @@
       Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset both provide a great starting point for research on
       real-world AI assistants.
     </p>
+
+    <hr />
+
+    <h2>References</h2>
+
+    <ol class="references">
+      <li id="ref-paper">
+        Bhattacharyya, A., Mahajan, S., Haresh, S., Yasarla, R., Pourreza, R., Liu, L., Garrepalli, R., and Memisevic, R.
+        <span class="ref-title">Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</span>
+        <em>arXiv preprint arXiv:2606.09547</em>, 2026.
+        <a href="https://arxiv.org/abs/2606.09547" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li id="ref-code">
+        Qualcomm AI Research. <span class="ref-title">Qualcomm Interactive Cooking Evaluation Code.</span>
+        GitHub repository.
+        <a href="https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li id="ref-egomcbench">
+        Qualcomm AI Research. <span class="ref-title">Ego-MC-Bench: Qualcomm Interactive Cooking Dataset (Ego Mistake Corrections).</span>
+        Hugging Face dataset.
+        <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-ego-mistake-corrections" target="_blank" rel="noopener">Link</a>
+      </li>
+      <li id="ref-egocomist">
+        Qualcomm AI Research. <span class="ref-title">Ego-CoMist: Qualcomm Interactive Cooking Dataset (Counterfactual Mistakes).</span>
+        Hugging Face dataset.
+        <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes" target="_blank" rel="noopener">Link</a>
+      </li>
+    </ol>
   </main>
 </body>
 </html>
