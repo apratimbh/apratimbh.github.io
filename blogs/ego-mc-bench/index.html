@@ -62,15 +62,17 @@
     </ul>
 
     <p>
-      The second option is increasingly appealing, but for it to work well in the real world, read my
-      <a href="https://apratimbh.github.io/blogs/interactive-task-guidance/">other blog post</a> to learn more about task
-      assistance &mdash; the AI assistant needs to:
+      The second option is increasingly appealing, but for it to work well in the real world, the AI assistant needs to:
     </p>
 
     <ul class="references" style="padding-left: 20px; list-style: disc;">
       <li>Provide step-by-step instructions.</li>
       <li>Intervene to prevent mistakes, as many cooking mistakes are irrecoverable.</li>
     </ul>
+
+    <p>
+      (Read my <a href="https://apratimbh.github.io/blogs/interactive-task-guidance/">other blog post</a> to learn more abou task assistance.)
+    </p>
 
     <h2>Intervention: Critical for Cooking Guidance</h2>
 
@@ -140,6 +142,18 @@
       </figcaption>
     </figure>
 
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/sota-intervention-bert-rouge.jpeg"
+        alt="F1 scores for state-of-the-art video LLMs on Ego-MC-Bench."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        F1 scores for state-of-the-art video LLMs on Ego-MC-Bench.
+      </figcaption>
+    </figure>
+
     <p>
       Evaluation on current state-of-the-art video LLMs shows very poor mistake-intervention capabilities. Even
       Gemini-3-Flash reaches a mistake-intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge
@@ -174,7 +188,19 @@
     <figure class="benchmark-figure">
       <img
         class="benchmark-image"
-        src="../../assets/blogs/ego-mc-bench/finetuned-intervention-f1.jpeg"
+        src="../../assets/blogs/ego-mc-bench/finetuned-intervention-f1.jpg"
+        alt="F1 score gains from fine-tuning on Ego-CoMist+."
+        loading="lazy"
+      />
+      <figcaption class="caption">
+        F1 score gains from fine-tuning on Ego-CoMist+.
+      </figcaption>
+    </figure>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/finetuned-intervention-bert-rouge.jpg"
         alt="F1 score gains from fine-tuning on Ego-CoMist+."
         loading="lazy"
       />
@@ -198,18 +224,7 @@
     <h2>Conclusion</h2>
 
     <p>
-      Real-world cooking guidance needs more than step-by-step instructions &mdash; it needs interventions that catch
-      mistakes before they become irrecoverable. Ego-MC-Bench shows just how far current video LLMs are from this goal,
-      with even Gemini-3-Flash struggling to intervene at the right time with the right feedback. Ego-CoMist offers a
-      practical path forward: by turning existing non-interactive cooking videos into counterfactual training examples,
-      it delivers meaningful gains, especially for small, edge-deployable models like Qwen3.5-2B.
-    </p>
-
-    <p>
-      Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset both provide a great starting point for research on
-      real-world AI assistants. There is still a long way to go before these assistants can reliably guide people
-      through recipes end-to-end, but closing the gap on intervention &mdash; knowing when and how to step in &mdash;
-      is a critical next step toward that goal.
+      Effective cooking assistance requires more than step-by-step instructions. It requires timely interventions that prevent mistakes before they become irrecoverable. Ego-MC-Bench highlights how challenging this remains for current video LLMs, with even Gemini-3-Flash often failing to intervene at the right moment with appropriate feedback. Ego-CoMist provides a practical path forward by converting existing cooking videos into counterfactual training data, yielding meaningful improvements, particularly for small, edge-deployable models such as Qwen3.5-2B. Together, Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset establish a strong foundation for research on real-world AI assistants. While reliable end-to-end recipe guidance remains an open challenge, improving intervention capabilities, knowing when and how to step in, is a critical next step toward that goal.
     </p>
 
     <hr />
