@@ -126,8 +126,7 @@
       cubes. The instructor intervenes, providing feedback that they need to dice the tomatoes into smaller cubes. The
       user then dices the tomatoes into cubes of the correct size. Next, the user tries to cut more than two tomatoes.
       The instructor intervenes again, reminding them to cut only two tomatoes &mdash; successfully completing the
-      recipe step. We provide benchmark stats in the <a href="https://arxiv.org/abs/2606.09547">paper</a><sup><a href="#ref-paper">[1]</a></sup>,
-      and release the <a href="https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval">evaluation code</a><sup><a href="#ref-code">[2]</a></sup>.
+      recipe step. We provide benchmark stats in the <a href="https://arxiv.org/abs/2606.09547">paper</a><sup><a href="#ref-paper">[1]</a></sup>.
     </p>
 
     <figure class="benchmark-figure">
@@ -150,15 +149,17 @@
         loading="lazy"
       />
       <figcaption class="caption">
-        F1 scores for state-of-the-art video LLMs on Ego-MC-Bench.
+        BERT and ROUGE_L scores (feedback) for state-of-the-art video LLMs on Ego-MC-Bench.
       </figcaption>
     </figure>
 
     <p>
       Evaluation on current state-of-the-art video LLMs shows very poor mistake-intervention capabilities. Even
       Gemini-3-Flash reaches a mistake-intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge
-      of detecting mistakes at the right time while producing useful corrective feedback. This is because the task
-      combines the challenges of perception, memory, temporal grounding, anticipation, and proactive communication.
+      of detecting mistakes at the right time while producing useful corrective feedback. Moreover, the feedbacks provided 
+      by these state-of-the-art models are not accurate as highlighted by the BERT and ROUGE-L scores. 
+      The weak performance is because the task is hard: 
+      it combines the challenges of perception, memory, temporal grounding, anticipation, and proactive communication.
     </p>
 
     <h2>Ego-CoMist: Training Data</h2>
@@ -201,7 +202,7 @@
       <img
         class="benchmark-image"
         src="../../assets/blogs/ego-mc-bench/finetuned-intervention-bert-rouge.jpg"
-        alt="F1 score gains from fine-tuning on Ego-CoMist+."
+        alt="BERT and ROUGE_L scores (feedback) score gains from fine-tuning on Ego-CoMist+."
         loading="lazy"
       />
       <figcaption class="caption">
