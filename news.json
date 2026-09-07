@@ -1,7 +1,15 @@
 [
   {
     "date": "18/06/2026",
-    "html": "One paper (provisionally) accepted to ECCV 2026!"
+    "html": "Oral presentation of our <a href=\"https://arxiv.org/pdf/2606.09547\">"Streaming Interventions"</a> paper at <a href=\"https://wearable-ai-workshop.github.io/\">Wearable AI@ECCV 20206</a>."
+  },
+  {
+    "date": "18/06/2026",
+    "html": "Oral presentation of our <a href=\"https://arxiv.org/pdf/2506.10145\">"RoCA"</a> paper at <a href=\"https://sdad.cc/\">SDAD@ECCV 20206</a>."
+  },
+  {
+    "date": "18/06/2026",
+    "html": "One paper accepted to ECCV 2026!"
   },
   {
     "date": "08/06/2026",
