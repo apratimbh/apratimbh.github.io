@@ -31,9 +31,9 @@
 
     <h1>Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset Suite</h1>
 
-    <p class="subtitle">
+    <!-- <p class="subtitle">
       Post-hoc feedback isn't enough. Real-world cooking guidance needs interventions that catch mistakes before they happen.
-    </p>
+    </p> -->
 
     <p class="project-link">
       <a href="https://apratimbh.github.io/livecookv2/">Project Page &rarr;</a>
@@ -45,24 +45,30 @@
     </video>
 
     <div class="meta">
-      <span>June 2026</span>
-      <span>·</span>
+      <span>September 2026</span>
+      <!-- <span>·</span>
       <span>Multimodal AI</span>
       <span>·</span>
-      <span>Interactive Task Guidance</span>
+      <span>Interactive Task Guidance</span> -->
     </div>
 
     <p>
-      What will you do when you want to learn a new task, like making a bowl of noodles?
+      What will you do when you want to learn a new task, like making a bowl of noodles? 
+      Nowadays, the default option is to learn by watching an online video or reading a recipe. 
+      This is difficult because no one is available to provide step-by-step instructions and, 
+      most importantly, point out when you have made a mistake. If you make a mistake, you may not realize it, 
+      or you may realize it too late. By that point it may not be possible to recover from the mistake at all. 
+      On the other hand, having an expert chef at home to provide guidance is not always possible. 
+      What if we had an AI assistant to guide us through the recipe in real time instead?
     </p>
 
-    <ul class="references" style="padding-left: 20px; list-style: disc;">
+    <!-- <ul class="references" style="padding-left: 20px; list-style: disc;">
       <li>Learn from an online recipe or a video.</li>
       <li>Use an AI assistant that can provide step-by-step guidance.</li>
-    </ul>
+    </ul> -->
 
     <p>
-      The second option is increasingly appealing, but for it to work well in the real world, the AI assistant needs to:
+      This option is increasingly appealing, but for it to work well in the real world, the AI assistant needs to:
     </p>
 
     <ul class="references" style="padding-left: 20px; list-style: disc;">
@@ -166,10 +172,53 @@
 
     <p>
       To develop real-world AI assistants for cooking guidance, we also need training data. Due to the lack of
-      interventional training data, we generate a synthetic dataset &mdash; <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes"><strong>Ego-CoMist</strong></a><sup><a href="#ref-egocomist">[4]</a></sup>. Built from existing
-      non-interactive datasets, it approximates the Ego-MC-Bench setting by providing feedback at the earliest point a
+      interventional training data, we generate a synthetic dataset &mdash; 
+      <a href="https://huggingface.co/datasets/qualcomm/qualcomm-interactive-cooking-dataset-counterfactual-mistakes"><strong>Ego-CoMist</strong></a><sup><a href="#ref-egocomist">[4]</a></sup> (counterfactual mistakes). 
+      Built from existing non-interactive datasets, it approximates the Ego-MC-Bench setting by providing feedback at the earliest point a
       mistake becomes apparent.
     </p>
+
+    <p>
+      Ego-CoMist is generated using a two stage pipeline. Given a video segment (from a non-interactive dataset), 
+      the first stage generates counterfactual instructions and feeback, and the second stage infers the appropriate time to intervene.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/ego-comist-stage1-example.png"
+        alt="An Ego-CoMist example showing a counterfactual instruction, user actions, and counterfactual feedback."
+        loading="lazy"
+      />
+    </figure>
+
+    <p>
+      Let us consider a concrete example for the measurement error type. 
+      Given a video segment from a non-interactive dataset such as Ego-4D, Ego-Exo4D or CaptainCook4D, 
+      with the instruction "Measure 4 tablespoons of flour and add it to the mug," 
+      the first stage uses a SOTA reasoning LLM to extract the quantity (4 tablespoons) and ingredient (flour). 
+      Next, we ask the LLM to propose an alternative reasonable quantity given the recipe—here, it suggests 3 tablespoons. 
+      Using this counterfactual quantity, we generate a counterfactual instruction and counterfactual feedback.
+    </p>
+
+    <figure class="benchmark-figure">
+      <img
+        class="benchmark-image"
+        src="../../assets/blogs/ego-mc-bench/ego-comist-stage2-example.png"
+        alt="An Ego-CoMist example showing a counterfactual instruction, user actions, and counterfactual feedback."
+        loading="lazy"
+      />
+    </figure>
+
+    <p>
+      At the second stage, we identify the appropriate timestamp for intervention. 
+      We accomplish this by using step-by-step descriptions of the video segment, 
+      which a SOTA video LLM (Qwen3-VL-32B) generates. 
+      Then, the reasoning LLM infers the appropriate feedback timestamp using the counterfactual instruction and 
+      step-by-step descriptions. Note this is an oracle setup: having access to the video, step-by-step descriptions, 
+      and counterfactual instruction enables accurate feedback timestamp inference. 
+    </p>
+
 
     <figure class="benchmark-figure">
       <img
@@ -181,9 +230,7 @@
     </figure>
 
     <p>
-      Above, we show an example from Ego-CoMist, where the counterfactual instruction is to measure three tablespoons of
-      flour into the mug. As the user adds a fourth tablespoon, Ego-CoMist steps in with counterfactual feedback at
-      exactly that point &mdash; before the mistake is made.
+      Above, we show the final resultant example in our Ego-CoMist dataset.
     </p>
 
     <figure class="benchmark-figure">
