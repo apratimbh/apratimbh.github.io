@@ -176,15 +176,19 @@
 
     function renderPublications(items) {
       const list = document.getElementById('pub-list');
-      list.innerHTML = items.map(pub => (
-        '<li' + (pub.award ? ' class="pub-award"' : '') + '>' +
+      list.innerHTML = items.map(pub => {
+        const badges = [];
+        if (pub.award) badges.push('<span class="badge badge-award">&#127942; ' + pub.award + '</span>');
+        if (pub.oral) badges.push('<span class="badge badge-oral">Oral</span>');
+        const badgeRow = badges.length ? '<span class="pub-badges">' + badges.join('') + '</span>' : '';
+        return '<li' + (badgeRow ? ' class="has-badges"' : '') + '>' +
           '<div class="pub-img-wrapper"><img src="' + pub.img + '" alt="' + (pub.alt || 'Paper Thumbnail') + '"></div>' +
           '<div class="pub-details">' +
-            (pub.award ? '<span class="award-badge">&#127942; ' + pub.award + '</span>' : '') +
+            badgeRow +
             pub.lines.map(line => '<span>' + line + '</span>').join('') +
           '</div>' +
-        '</li>'
-      )).join('');
+        '</li>';
+      }).join('');
     }
 
     loadJSON('news.json').then(renderNews).catch(err => console.error(err));
