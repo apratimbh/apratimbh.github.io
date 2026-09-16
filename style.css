@@ -378,9 +378,9 @@ a:hover { color: var(--link-dark); }
 }
 
 /* Style for author lists.
-   Position shifts by one on award cards, where a badge span comes first. */
-.pub-list li:not(.pub-award) .pub-details > span:nth-child(1),
-.pub-list li.pub-award .pub-details > span:nth-child(2) {
+   Position shifts by one on cards carrying a badge row. */
+.pub-list li:not(.has-badges) .pub-details > span:nth-child(1),
+.pub-list li.has-badges .pub-details > span:nth-child(2) {
   color: var(--muted);
   font-size: 0.9rem;
   margin-bottom: 0.3rem;
@@ -388,26 +388,13 @@ a:hover { color: var(--link-dark); }
 }
 
 /* Style for venue information - make it stand out more */
-.pub-list li:not(.pub-award) .pub-details > span:nth-child(3),
-.pub-list li.pub-award .pub-details > span:nth-child(4) {
+.pub-list li:not(.has-badges) .pub-details > span:nth-child(3),
+.pub-list li.has-badges .pub-details > span:nth-child(4) {
   color: #059669; /* Green color for venues */
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
   margin-top: 0.1rem;
-}
-
-/* Make (Oral) presentations stand out even more */
-.pub-list li:not(.pub-award) .pub-details > span:nth-child(3) strong,
-.pub-list li.pub-award .pub-details > span:nth-child(4) strong {
-  color: #dc2626; /* Red color for Oral */
-  font-weight: 700;
-  padding: 0.1rem 0.4rem;
-  background-color: #fee2e2; /* Light red background */
-  border-radius: 999px;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
 /* Style for links */
@@ -419,24 +406,43 @@ a:hover { color: var(--link-dark); }
   font-weight: 600;
 }
 
-/* === Award badge (optional "award" field in publications.json) === */
-.pub-details > span.award-badge {
-  align-self: flex-start;
-  color: #92400e;                 /* amber-800 text */
-  background: #fffbeb;            /* amber-50 background */
-  border: 1px solid #fcd34d;      /* amber-300 border */
+/* === Badges (optional "award" / "oral" fields in publications.json) === */
+.pub-details > span.pub-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
   border-radius: 999px;
   padding: 0.18rem 0.6rem;
-  margin-bottom: 0.5rem;
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
-.pub-details > span.award-badge a {
+/* Award — amber */
+.badge-award {
+  color: #92400e;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+}
+
+.badge-award a {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: #d97706;
+}
+
+/* Oral — red */
+.badge-oral {
+  color: #dc2626;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 @media (max-width: 640px) {
