@@ -134,10 +134,11 @@
   {
     "img": "assets/king_eccv_2022.jpg",
     "alt": "Paper Thumbnail",
+    "oral": true,
     "lines": [
       "Niklas Hanselmann, Katrin Renz, Kashyap Chitta, <strong>Apratim Bhattacharyya</strong>, Andreas Geiger",
       "<em><strong>KING: Generating Safety-Critical Driving Scenarios for Robust Imitation via Kinematics Gradients.</strong></em>",
-      "ECCV, 2022. <strong>(Oral)</strong>",
+      "ECCV, 2022.",
       "<a href=\"https://arxiv.org/pdf/2204.13683\">Paper</a>; <a href=\"https://lasnik.github.io/king/\">Project Page</a>"
     ]
   },
@@ -155,10 +156,11 @@
   {
     "img": "assets/hbaflow_gcpr_2020.jpg",
     "alt": "Paper Thumbnail",
+    "oral": true,
     "lines": [
       "<strong>Apratim Bhattacharyya</strong>, Christoph-Nikolas Straehle, Mario Fritz, Bernt Schiele",
       "<em><strong>Haar Wavelet based Block Autoregressive Flows for Trajectories.</strong></em>",
-      "GCPR, 2020. <strong>(Oral)</strong>",
+      "GCPR, 2020.",
       "<a href=\"https://arxiv.org/abs/2009.09878\">Paper</a>"
     ]
   },
@@ -185,10 +187,11 @@
   {
     "img": "assets/cfvae_neurips_2019.jpg",
     "alt": "Paper Thumbnail",
+    "oral": true,
     "lines": [
       "<strong>Apratim Bhattacharyya</strong>, Michael Hanselmann, Mario Fritz, Bernt Schiele, Christoph-Nikolas Straehle",
       "<em><strong>Conditional Flow Variational Autoencoders for Structured Sequence Prediction.</strong></em>",
-      "ML4AD @ NeurIPS, 2019. <strong>(Oral)</strong>",
+      "ML4AD @ NeurIPS, 2019.",
       "<a href=\"https://arxiv.org/abs/1908.09008\">Paper</a>"
     ]
   },
@@ -205,10 +208,11 @@
   {
     "img": "assets/bmscvae_cvpr_2018.jpg",
     "alt": "Paper Thumbnail",
+    "oral": true,
     "lines": [
       "<strong>Apratim Bhattacharyya</strong>, Bernt Schiele, Mario Fritz",
       "<em><strong>Accurate and Diverse Sampling of Sequences based on a ‘Best of Many’ Sample Objective.</strong></em>",
-      "CVPR, 2018. <strong>(Oral)</strong>",
+      "CVPR, 2018.",
       "<a href=\"https://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Accurate_and_Diverse_CVPR_2018_paper.pdf\">Paper</a>; <a href=\"https://github.com/apratimbhattacharyya18/CGM_BestOfMany\">Code</a>"
     ]
   },
