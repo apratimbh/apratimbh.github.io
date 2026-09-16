@@ -377,8 +377,10 @@ a:hover { color: var(--link-dark); }
   line-height: 1.4;
 }
 
-/* Style for author lists - first span in pub-details */
-.pub-details > span:first-child {
+/* Style for author lists.
+   Position shifts by one on award cards, where a badge span comes first. */
+.pub-list li:not(.pub-award) .pub-details > span:nth-child(1),
+.pub-list li.pub-award .pub-details > span:nth-child(2) {
   color: var(--muted);
   font-size: 0.9rem;
   margin-bottom: 0.3rem;
@@ -386,7 +388,8 @@ a:hover { color: var(--link-dark); }
 }
 
 /* Style for venue information - make it stand out more */
-.pub-details > span:nth-child(3) {
+.pub-list li:not(.pub-award) .pub-details > span:nth-child(3),
+.pub-list li.pub-award .pub-details > span:nth-child(4) {
   color: #059669; /* Green color for venues */
   font-size: 0.95rem;
   font-weight: 700;
@@ -395,7 +398,8 @@ a:hover { color: var(--link-dark); }
 }
 
 /* Make (Oral) presentations stand out even more */
-.pub-details > span:nth-child(3) strong {
+.pub-list li:not(.pub-award) .pub-details > span:nth-child(3) strong,
+.pub-list li.pub-award .pub-details > span:nth-child(4) strong {
   color: #dc2626; /* Red color for Oral */
   font-weight: 700;
   padding: 0.1rem 0.4rem;
@@ -413,6 +417,32 @@ a:hover { color: var(--link-dark); }
 
 .pub-details > span:last-child a {
   font-weight: 600;
+}
+
+/* === Award badge (optional "award" field in publications.json) === */
+.pub-details > span.award-badge {
+  align-self: flex-start;
+  color: #92400e;                 /* amber-800 text */
+  background: #fffbeb;            /* amber-50 background */
+  border: 1px solid #fcd34d;      /* amber-300 border */
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pub-details > span.award-badge a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d97706;
+}
+
+/* Award cards get a subtle amber accent */
+.pub-list li.pub-award {
+  border-color: #fcd34d;
+  box-shadow: 0 1px 2px rgba(146, 64, 14, 0.06), 0 8px 24px -8px rgba(146, 64, 14, 0.16);
 }
 
 @media (max-width: 640px) {
