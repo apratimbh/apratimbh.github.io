@@ -33,6 +33,7 @@
   {
     "img": "assets/roca_2025.jpg",
     "alt": "Paper Thumbnail",
+    "award": "Best Paper Honorable Mention, <a href=\"https://sdad.cc/\">SDAD Workshop</a> @ ECCV 2026",
     "lines": [
       "Rajeev Yasarla, Shizhong Han, Hsin-Pai Cheng, <strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Litian Liu, Yunxiao Shi, Risheek Garrepalli, Hong Cai, Fatih Porikli",
       "<em><strong>RoCA: Robust Cross-Domain End-to-End Autonomous Driving.</strong></em>",
