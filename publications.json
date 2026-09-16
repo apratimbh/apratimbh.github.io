@@ -12,6 +12,7 @@
   {
     "img": "assets/ego_mc_bench_2026.jpg",
     "alt": "Paper Thumbnail",
+    "award": "Best Paper Honorable Mention, <a href=\"https://wearable-ai-workshop.github.io/\">Wearable AI Workshop</a> @ ECCV 2026",
     "lines": [
       "<strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Sanjay Haresh, Rajeev Yasarla, Reza Pourreza, Litian Liu, Risheek Garrepalli, Roland Memisevic",
       "<em><strong>Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</strong></em>",
