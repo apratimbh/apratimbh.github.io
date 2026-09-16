@@ -110,20 +110,20 @@
       <h2>Blog Posts</h2>
       <ul class="blog-list">
         <li class="blog-item">
-          <a class="blog-thumb-link" href="blogs/interactive-task-guidance/">
+          <a class="blog-thumb-link" href="blogs/ego-mc-bench/">
             <img
               class="blog-thumb"
-              src="assets/blog_post_streaming_interventions.png"
-              alt="Thumbnail for Streaming Interventions blog post"
+              src="assets/ego_mc_bench_2026.jpg"
+              alt="Thumbnail for Ego-MC-Bench blog post"
               loading="lazy"
             >
           </a>
           <div class="blog-details">
             <a class="blog-title" href="blogs/ego-mc-bench/">Ego-MC-Bench and the Qualcomm Interactive Cooking Dataset Suite</a>
             <p class="blog-summary">
-              How our Ego-MC-Bench and Ego-CoMist dataset addresses the proactive intervention gap in AI assistance.
+              Why intervention -- not just post-hoc feedback -- is critical for real-world cooking guidance, and how Ego-MC-Bench and Ego-CoMist push AI assistants toward it.
             </p>
-            <span class="blog-date">September 2026</span>
+            <span class="blog-date">June 2026</span>
           </div>
         </li>
         <li class="blog-item">
@@ -177,9 +177,10 @@
     function renderPublications(items) {
       const list = document.getElementById('pub-list');
       list.innerHTML = items.map(pub => (
-        '<li>' +
+        '<li' + (pub.award ? ' class="pub-award"' : '') + '>' +
           '<div class="pub-img-wrapper"><img src="' + pub.img + '" alt="' + (pub.alt || 'Paper Thumbnail') + '"></div>' +
           '<div class="pub-details">' +
+            (pub.award ? '<span class="award-badge">&#127942; ' + pub.award + '</span>' : '') +
             pub.lines.map(line => '<span>' + line + '</span>').join('') +
           '</div>' +
         '</li>'
