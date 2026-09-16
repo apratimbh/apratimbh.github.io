@@ -439,12 +439,6 @@ a:hover { color: var(--link-dark); }
   text-decoration-color: #d97706;
 }
 
-/* Award cards get a subtle amber accent */
-.pub-list li.pub-award {
-  border-color: #fcd34d;
-  box-shadow: 0 1px 2px rgba(146, 64, 14, 0.06), 0 8px 24px -8px rgba(146, 64, 14, 0.16);
-}
-
 @media (max-width: 640px) {
   header .container { flex-wrap: wrap; gap: 0.4rem; }
   nav { flex-wrap: wrap; }
