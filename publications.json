@@ -1,5 +1,26 @@
 [
   {
+    "img": "assets/ego_mc_bench_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "award": "Best Paper Honorable Mention, <a href=\"https://wearable-ai-workshop.github.io/\">Wearable AI Workshop</a> @ ECCV 2026",
+    "lines": [
+      "<strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Sanjay Haresh, Rajeev Yasarla, Reza Pourreza, Litian Liu, Risheek Garrepalli, Roland Memisevic",
+      "<em><strong>Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</strong></em>",
+      "NeurIPS, 2026.",
+      "<a href=\"https://arxiv.org/abs/2606.09547\">Paper</a>; <a href=\"https://apratimbh.github.io/livecookv2/\">Project Page</a>"
+    ]
+  },
+  {
+    "img": "assets/gero_arxiv_2026.jpg",
+    "alt": "Paper Thumbnail",
+    "lines": [
+      "Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, <strong>Apratim Bhattacharyya</strong>, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
+      "<em><strong>Generative Scenario Rollouts for End-to-End Autonomous Driving.</strong></em>",
+      "NeurIPS, 2026.",
+      "<a href=\"https://arxiv.org/pdf/2601.11475\">Paper</a>"
+    ]
+  },
+  {
     "img": "assets/len_gen_2026.jpg",
     "alt": "Paper Thumbnail",
     "lines": [
@@ -7,17 +28,6 @@
       "<em><strong>On Locality and Length Generalization in Visual Reasoning.</strong></em>",
       "ECCV, 2026.",
       "<a href=\"https://arxiv.org/abs/2607.09061\">Paper</a>"
-    ]
-  },
-  {
-    "img": "assets/ego_mc_bench_2026.jpg",
-    "alt": "Paper Thumbnail",
-    "award": "Best Paper Honorable Mention, <a href=\"https://wearable-ai-workshop.github.io/\">Wearable AI Workshop</a> @ ECCV 2026",
-    "lines": [
-      "<strong>Apratim Bhattacharyya</strong>, Shweta Mahajan, Sanjay Haresh, Rajeev Yasarla, Reza Pourreza, Litian Liu, Risheek Garrepalli, Roland Memisevic",
-      "<em><strong>Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?</strong></em>",
-      "arXiv, 2026.",
-      "<a href=\"https://arxiv.org/abs/2606.09547\">Paper</a>; <a href=\"https://apratimbh.github.io/livecookv2/\">Project Page</a>"
     ]
   },
   {
@@ -39,16 +49,6 @@
       "<em><strong>RoCA: Robust Cross-Domain End-to-End Autonomous Driving.</strong></em>",
       "ICML, 2026.",
       "<a href=\"https://arxiv.org/pdf/2506.10145\">Paper</a>"
-    ]
-  },
-  {
-    "img": "assets/gero_arxiv_2026.jpg",
-    "alt": "Paper Thumbnail",
-    "lines": [
-      "Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, <strong>Apratim Bhattacharyya</strong>, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
-      "<em><strong>Generative Scenario Rollouts for End-to-End Autonomous Driving.</strong></em>",
-      "arXiv, 2026.",
-      "<a href=\"https://arxiv.org/pdf/2601.11475\">Paper</a>"
     ]
   },
   {
