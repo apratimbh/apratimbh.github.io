@@ -98,19 +98,21 @@
             <p class="abstract-text">The <strong>Qualcomm Exercise Video Dataset (QEVD)</strong> combines short clips for fine-grained fitness understanding with longer workout sessions for interactive coaching. Annotations cover exercise recognition, questions and answers, corrective feedback, encouragement, and repetition counting.</p>
             <div class="table-container">
                 <table class="results-table">
-                    <caption>Original dataset splits reported in the NeurIPS 2024 paper.</caption>
+                    <caption>FIT-300K statistics from the NeurIPS 2024 paper; FIT-COACH statistics for the full collection, including the extended training set.</caption>
                     <thead>
                         <tr><th scope="col">Dataset</th><th scope="col">FIT-300K</th><th scope="col">FIT-COACH</th></tr>
                     </thead>
                     <tbody>
-                        <tr><th scope="row">Training videos</th><td>281,660</td><td>149</td></tr>
+                        <tr><th scope="row">Total videos</th><td>298,089</td><td>364</td></tr>
+                        <tr><th scope="row">Training videos</th><td>281,660</td><td>290</td></tr>
                         <tr><th scope="row">Test videos</th><td>16,429</td><td>74</td></tr>
                         <tr><th scope="row">Exercise types</th><td>148</td><td>23</td></tr>
-                        <tr><th scope="row">Average video duration</th><td>5.6 seconds</td><td>About 3.5 minutes</td></tr>
+                        <tr><th scope="row">Average video duration</th><td>5.6 seconds</td><td>About 3.6 minutes</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p class="abstract-text">The original FIT-COACH test split forms the benchmark. Each session contains five to six exercises, with feedback aligned to visible actions. Evaluation asks both <strong>when</strong> the model should intervene and <strong>what</strong> it should say.</p>
+            <p class="abstract-text">The full FIT-COACH collection contains <strong>364 workout videos</strong> spanning <strong>21.6 hours</strong> of recorded activity. The <strong>290-video extended training set</strong> combines the original 149 training videos, 100 former CVPR 2025 competition videos, and 41 additional workouts. Durations are measured from the original recording timestamps.</p>
+            <p class="abstract-text">The original <strong>74-video FIT-COACH benchmark remains the test set</strong>. Each session contains five to six exercises, with feedback aligned to visible actions. Evaluation asks both <strong>when</strong> the model should intervene and <strong>what</strong> it should say.</p>
             <p class="abstract-text">The paper also introduces <strong>Stream-VLM</strong>, an end-to-end streaming baseline that processes incoming video and decides when to provide feedback. The benchmark exposes the challenges of combining fine-grained perception, memory, and timely communication.</p>
         </section>
 
