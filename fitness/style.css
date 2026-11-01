@@ -1,0 +1,310 @@
+/* Match the typography and layout of the LiveCook project pages. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+video:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 4px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    padding: 60px 0 50px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.paper-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+    line-height: 1.3;
+}
+
+.authors {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.authors sup {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.author {
+    display: inline-block;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.author::after {
+    content: ",";
+}
+
+.author:last-child::after {
+    content: "";
+}
+
+.conference {
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #0066cc;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.section {
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 24px 0 10px;
+    color: #222;
+}
+
+.abstract-text {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.section > :last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    padding: 10px 18px;
+    margin: 16px 0 24px;
+    color: #555;
+}
+
+blockquote p + p {
+    margin-top: 8px;
+}
+
+.video-container {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.authorship {
+    margin: 8px 0 20px;
+}
+
+.caption a {
+    color: #0066cc;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.chapters {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.chapters.is-ready {
+    display: flex;
+}
+
+.chapters button {
+    font: inherit;
+    font-size: 0.85rem;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.chapters button:hover {
+    background: #f4f4f4;
+    border-color: #777;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+}
+
+.results-table caption {
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.results-table thead th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333;
+}
+
+.results-table th:first-child {
+    text-align: left;
+}
+
+.bibtex-section pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #444;
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 36px 0 30px;
+        margin-bottom: 24px;
+    }
+
+    .paper-title {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        padding: 0 14px;
+    }
+
+    .authors {
+        font-size: 1rem;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+
+    .section {
+        padding: 20px 16px;
+        margin-bottom: 24px;
+    }
+
+    .abstract-text {
+        text-align: left;
+    }
+
+    .results-table {
+        font-size: 0.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    a,
+    .btn {
+        transition: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+}

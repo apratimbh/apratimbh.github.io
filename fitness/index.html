@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QEVD: What to Say and When to Say it. A NeurIPS 2024 dataset and benchmark for live fitness coaching, proactive mistake corrections, and feedback grounded in activity over time.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction">
+    <meta property="og:description" content="Explore QEVD and watch two minutes of proactive mistake corrections and feedback across time.">
+    <meta property="og:url" content="https://apratimbh.github.io/fitness/">
+    <meta property="og:image" content="https://apratimbh.github.io/fitness/assets/teaser_poster.jpg">
+    <title>What to Say and When to Say it | QEVD</title>
+    <link rel="canonical" href="https://apratimbh.github.io/fitness/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="paper-title">What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction</h1>
+
+            <div class="authors">
+                <span class="author">Sunny Panchal<sup>*</sup></span>
+                <span class="author">Apratim Bhattacharyya<sup>*</sup></span>
+                <span class="author">Guillaume Berger</span>
+                <span class="author">Antoine Mercier</span>
+                <span class="author">Cornelius Böhm</span>
+                <span class="author">Florian Dietrichkeit</span>
+                <span class="author">Reza Pourreza</span>
+                <span class="author">Xuanlin Li</span>
+                <span class="author">Pulkit Madan</span>
+                <span class="author">Mingu Lee</span>
+                <span class="author">Mark Todorovich</span>
+                <span class="author">Ingo Bax</span>
+                <span class="author">Roland Memisevic</span>
+            </div>
+            <p class="caption authorship">* Joint first authorship</p>
+
+            <div class="conference">
+                <span class="conf-name">NeurIPS 2024 · Datasets and Benchmarks Track</span>
+            </div>
+
+            <nav class="links" aria-label="Paper resources">
+                <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/8aa695b5d6bf9e958d4e56b22c9b859d-Paper-Datasets_and_Benchmarks_Track.pdf" class="btn"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+                <a href="https://www.qualcomm.com/developer/software/qevd-dataset" class="btn"><i class="fas fa-database" aria-hidden="true"></i> Data</a>
+                <a href="https://github.com/Qualcomm-AI-research/FitCoach" class="btn"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                <a href="https://apratimbh.github.io/whatandwhen" class="btn"><i class="fas fa-book-open" aria-hidden="true"></i> Dataset Quick Start Guide</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section video-section" aria-labelledby="teaser-title">
+            <h2 class="section-title" id="teaser-title">QEVD / FIT-COACH</h2>
+            <div class="video-container">
+                <video id="teaser" controls playsinline preload="metadata" poster="assets/teaser_poster.jpg" aria-label="QEVD-FIT-COACH dataset teaser" aria-describedby="teaser-caption">
+                    <source src="assets/QEVD-FIT-COACH-Teaser-2min.mp4" type="video/mp4">
+                    <track kind="subtitles" src="assets/captions.vtt" srclang="en" label="Coaching annotations">
+                    <p><a href="assets/QEVD-FIT-COACH-Teaser-2min.mp4">Download the teaser video</a> to watch it.</p>
+                </video>
+            </div>
+            <p class="caption" id="teaser-caption">Two minutes of proactive mistake corrections and feedback across time.<br>Real workout videos with dataset annotations. Silent, with coaching text shown on screen.</p>
+            <nav class="chapters" aria-label="Teaser chapters">
+                <button type="button" data-time="0" aria-controls="teaser">00:00 · Overview</button>
+                <button type="button" data-time="5" aria-controls="teaser">00:05 · Proactive corrections</button>
+                <button type="button" data-time="47" aria-controls="teaser">00:47 · Multi-hop feedback</button>
+                <button type="button" data-time="93" aria-controls="teaser">01:33 · Across exercises</button>
+            </nav>
+            <p class="caption"><a href="assets/QEVD-FIT-COACH-Teaser-2min.mp4" download>Download video (MP4, 22 MB)</a></p>
+        </section>
+
+        <section class="section abstract-section" aria-labelledby="abstract-title">
+            <h2 class="section-title" id="abstract-title">Abstract</h2>
+            <p class="abstract-text">Vision-language models have shown impressive progress in recent years. However, existing models are largely limited to turn-based interactions, where each turn must be stepped (i.e., prompted) by the user. Open-ended, asynchronous interactions, where an AI model may proactively deliver timely responses or feedback based on the unfolding situation in real-time, are an open challenge. In this work, we present the <strong>QEVD benchmark and dataset</strong>, which explores human-AI interaction in the challenging, yet controlled, real-world domain of fitness coaching—a task which intrinsically requires monitoring live user activity and providing immediate feedback. The benchmark requires vision-language models to recognize complex human actions, identify possible mistakes, and provide appropriate feedback in real-time. Our experiments reveal the limitations of existing state-of-the-art vision-language models for such asynchronous situated interactions. Motivated by this, we propose a simple end-to-end streaming baseline that can respond asynchronously to human actions with appropriate feedback at the appropriate time.</p>
+        </section>
+
+        <section class="section" aria-labelledby="feedback-title">
+            <h2 class="section-title" id="feedback-title">What to Say, and When to Say It</h2>
+            <h3>Proactive Mistake Corrections</h3>
+            <p class="abstract-text">A live coach must recognize a mistake as it becomes visible, give a useful correction, and acknowledge the participant’s response. FIT-COACH captures these exchanges: asking for a deeper squat, correcting hand placement in a push-up, or coordinating arms and legs during jumping jacks.</p>
+            <blockquote>
+                <p>“Yes! That's it! Now try to make your squats deeper!”</p>
+                <p>“Nice deep squat! Keep it up!”</p>
+            </blockquote>
+
+            <h3>Multi-hop Feedback Across Time</h3>
+            <p class="abstract-text">Later feedback can depend on earlier corrections, completed repetitions, and previous exercises. A coach needs to remember what was said and connect it to the participant’s evolving movement. The teaser shows corrections carried into repetition counting, and a reminder about squat depth that refers back to an earlier exercise.</p>
+            <blockquote>
+                <p>“I like your stance! Now, try to squat down lower!”</p>
+                <p>“10 reps! Keep going and try to squat down lower!!”</p>
+            </blockquote>
+        </section>
+
+        <section class="section" aria-labelledby="dataset-title">
+            <h2 class="section-title" id="dataset-title">Dataset and Benchmark</h2>
+            <p class="abstract-text">The <strong>Qualcomm Exercise Video Dataset (QEVD)</strong> combines short clips for fine-grained fitness understanding with longer workout sessions for interactive coaching. Annotations cover exercise recognition, questions and answers, corrective feedback, encouragement, and repetition counting.</p>
+            <div class="table-container">
+                <table class="results-table">
+                    <caption>Original dataset splits reported in the NeurIPS 2024 paper.</caption>
+                    <thead>
+                        <tr><th scope="col">Dataset</th><th scope="col">FIT-300K</th><th scope="col">FIT-COACH</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Training videos</th><td>281,660</td><td>149</td></tr>
+                        <tr><th scope="row">Test videos</th><td>16,429</td><td>74</td></tr>
+                        <tr><th scope="row">Exercise types</th><td>148</td><td>23</td></tr>
+                        <tr><th scope="row">Average video duration</th><td>5.6 seconds</td><td>About 3.5 minutes</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="abstract-text">The original FIT-COACH test split forms the benchmark. Each session contains five to six exercises, with feedback aligned to visible actions. Evaluation asks both <strong>when</strong> the model should intervene and <strong>what</strong> it should say.</p>
+            <p class="abstract-text">The paper also introduces <strong>Stream-VLM</strong>, an end-to-end streaming baseline that processes incoming video and decides when to provide feedback. The benchmark exposes the challenges of combining fine-grained perception, memory, and timely communication.</p>
+        </section>
+
+        <section class="section bibtex-section" aria-labelledby="citation-title">
+            <h2 class="section-title" id="citation-title">Citation</h2>
+            <pre><code>@inproceedings{panchal2024what,
+    title={What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction},
+    author={Panchal, Sunny and Bhattacharyya, Apratim and Berger, Guillaume and Mercier, Antoine and B{\"o}hm, Cornelius and Dietrichkeit, Florian and Pourreza, Reza and Li, Xuanlin and Madan, Pulkit and Lee, Mingu and Todorovich, Mark and Bax, Ingo and Memisevic, Roland},
+    booktitle={Advances in Neural Information Processing Systems},
+    volume={37},
+    year={2024},
+    url={https://proceedings.neurips.cc/paper_files/paper/2024/file/8aa695b5d6bf9e958d4e56b22c9b859d-Paper-Datasets_and_Benchmarks_Track.pdf}
+}</code></pre>
+        </section>
+    </main>
+</body>
+</html>
