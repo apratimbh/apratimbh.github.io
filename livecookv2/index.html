@@ -83,7 +83,7 @@
                 <img src="assets/f1_sota.jpg" class="figure-image" alt="F1 scores for state-of-the-art video LLMs on Ego-MC-Bench">
             </div>
             <p class="abstract-text">
-                Current state-of-the-art video LLMs show very poor mistake intervention capabilities. Even Gemini-3-Flash reaches a mistake intervention F1 score of only 0.18 on per-recipe steps, highlighting the challenge of detecting mistakes at the right time while producing useful corrective feedback. This is becuase this task combines the challenges of perception, memory, temporal grounding, anticipation, and proactive communication.
+                Current state-of-the-art video LLMs show very poor mistake intervention capabilities. Even Gemini-3-Flash reaches a mistake intervention F1 score of only 0.23 on per-recipe steps, highlighting the challenge of detecting mistakes at the right time while producing useful corrective feedback. This is becuase this task combines the challenges of perception, memory, temporal grounding, anticipation, and proactive communication.
             </p>
         </section>
 
@@ -103,7 +103,7 @@
                 <img src="assets/f1_egocomist.jpg" class="figure-image" alt="F1 score gains from fine-tuning on Ego-CoMist plus">
             </div>
             <p class="abstract-text">
-                Fine-tuning on Ego-CoMist+ significantly improves mistake intervention capabilities. Qwen3.5-2B reaches an F1 score of 0.20 on per-recipe steps, showing strong gains for small models that are practical for low-latency and edge-deployed assistants.
+                Fine-tuning on Ego-CoMist+ significantly improves mistake intervention capabilities. Qwen3.5-2B reaches an F1 score of 0.27 on per-recipe steps, showing strong gains for small models that are practical for low-latency and edge-deployed assistants.
             </p>
         </section>
 
@@ -171,8 +171,8 @@
                             <td class="method-name">Qwen3.5-2B</td>
                             <td>0.0</td>
                             <td>0.02</td>
-                            <td>0.29</td>
-                            <td>0.04</td>
+                            <td>0.44</td>
+                            <td>0.05</td>
                             <td><em>0.184</em></td>
                             <td><em>0.130</em></td>
                         </tr>
@@ -180,8 +180,8 @@
                             <td class="method-name">Qwen3.5-9B</td>
                             <td>6.1</td>
                             <td>0.07</td>
-                            <td>0.33</td>
-                            <td>0.11</td>
+                            <td>0.53</td>
+                            <td>0.12</td>
                             <td><em>0.201</em></td>
                             <td><em>0.137</em></td>
                         </tr>
@@ -189,17 +189,17 @@
                             <td class="method-name">Qwen3.5-27B</td>
                             <td><strong>45.5</strong></td>
                             <td>0.12</td>
+                            <td>0.27</td>
                             <td>0.17</td>
-                            <td>0.14</td>
                             <td><em>0.206</em></td>
                             <td><em>0.137</em></td>
                         </tr>
                         <tr>
                             <td class="method-name">Qwen3-VL-32B</td>
                             <td>6.8</td>
-                            <td>0.10</td>
-                            <td><strong>0.34</strong></td>
-                            <td>0.16</td>
+                            <td>0.11</td>
+                            <td>0.55</td>
+                            <td>0.18</td>
                             <td><em>0.068</em></td>
                             <td><em>0.092</em></td>
                         </tr>
@@ -225,17 +225,17 @@
                             <td class="method-name">Gemini-2.5-Flash</td>
                             <td>24.6</td>
                             <td>0.17</td>
-                            <td>0.20</td>
-                            <td><strong>0.18</strong></td>
+                            <td>0.32</td>
+                            <td><strong>0.23</strong></td>
                             <td><em>0.180</em></td>
                             <td><em>0.135</em></td>
                         </tr>
                         <tr class="highlight-row">
                             <td class="method-name">Gemini-3-Flash</td>
                             <td>32.7</td>
-                            <td><strong>0.18</strong></td>
-                            <td>0.18</td>
-                            <td><strong>0.18</strong></td>
+                            <td><strong>0.19</strong></td>
+                            <td>0.30</td>
+                            <td><strong>0.23</strong></td>
                             <td><em>0.126</em></td>
                             <td><em>0.102</em></td>
                         </tr>
@@ -243,29 +243,29 @@
                             <td colspan="7"><em>Full recipes</em></td>
                         </tr>
                         <tr>
-                            <td class="method-name">Qwen3.5-27B</td>
-                            <td><strong>30.3</strong></td>
-                            <td><strong>0.05</strong></td>
-                            <td>0.13</td>
-                            <td>0.07</td>
-                            <td><em>0.201</em></td>
-                            <td><em>0.136</em></td>
-                        </tr>
-                        <tr>
                             <td class="method-name">Qwen3-VL-32B</td>
                             <td>6.8</td>
                             <td>0.04</td>
-                            <td><strong>0.28</strong></td>
+                            <td><strong>0.40</strong></td>
                             <td>0.07</td>
                             <td><em>0.061</em></td>
                             <td><em>0.090</em></td>
+                        </tr>
+                        <tr>
+                            <td class="method-name">Qwen3.5-27B</td>
+                            <td><strong>30.3</strong></td>
+                            <td>0.05</td>
+                            <td>0.20</td>
+                            <td>0.08</td>
+                            <td><em>0.201</em></td>
+                            <td><em>0.136</em></td>
                         </tr>
                         <tr class="highlight-row">
                             <td class="method-name">Gemini-3-Flash</td>
                             <td>10.6</td>
                             <td><strong>0.05</strong></td>
-                            <td>0.20</td>
-                            <td><strong>0.08</strong></td>
+                            <td>0.33</td>
+                            <td><strong>0.09</strong></td>
                             <td><em>0.097</em></td>
                             <td><em>0.091</em></td>
                         </tr>
@@ -305,8 +305,8 @@
                             <td class="method-name">ProAssist</td>
                             <td>3.0</td>
                             <td>0.31</td>
-                            <td>0.09</td>
                             <td>0.14</td>
+                            <td>0.20</td>
                             <td><em>0.281</em></td>
                             <td><em>0.173</em></td>
                         </tr>
@@ -314,17 +314,17 @@
                             <td class="method-name">Qwen3.5-2B (QICD)</td>
                             <td>28.9</td>
                             <td><strong>0.75</strong></td>
-                            <td>0.05</td>
-                            <td>0.10</td>
+                            <td>0.06</td>
+                            <td>0.11</td>
                             <td><em>0.359</em></td>
                             <td><em>0.218</em></td>
                         </tr>
                         <tr>
                             <td class="method-name">Qwen3.5-2B (Ego-CoMist)</td>
-                            <td>36.1</td>
+                            <td>32.1</td>
                             <td>0.34</td>
-                            <td>0.11</td>
-                            <td>0.12</td>
+                            <td>0.13</td>
+                            <td>0.19</td>
                             <td><em>0.359</em></td>
                             <td><em>0.229</em></td>
                         </tr>
@@ -332,8 +332,8 @@
                             <td class="method-name">Qwen3-VL-2B (Ego-CoMist+)</td>
                             <td>30.4</td>
                             <td>0.40</td>
-                            <td>0.10</td>
-                            <td>0.16</td>
+                            <td>0.14</td>
+                            <td>0.20</td>
                             <td><em>0.335</em></td>
                             <td><em>0.219</em></td>
                         </tr>
@@ -341,19 +341,19 @@
                             <td class="method-name">Qwen3.5-0.8B (Ego-CoMist+)</td>
                             <td>30.5</td>
                             <td>0.29</td>
-                            <td>0.03</td>
-                            <td>0.06</td>
+                            <td>0.05</td>
+                            <td>0.08</td>
                             <td><em>0.339</em></td>
                             <td><em>0.183</em></td>
                         </tr>
                         <tr class="highlight-row">
                             <td class="method-name">Qwen3.5-2B (Ego-CoMist+)</td>
-                            <td><strong>37.1</strong></td>
-                            <td>0.39</td>
-                            <td><strong>0.14</strong></td>
-                            <td><strong>0.20</strong></td>
-                            <td><em>0.444</em></td>
-                            <td><em>0.272</em></td>
+                            <td><strong>33.0</strong></td>
+                            <td>0.35</td>
+                            <td><strong>0.23</strong></td>
+                            <td><strong>0.27</strong></td>
+                            <td><em>0.461</em></td>
+                            <td><em>0.292</em></td>
                         </tr>
                         <tr class="subheader-row">
                             <td colspan="7"><em>Full recipes</em></td>
@@ -371,19 +371,19 @@
                             <td class="method-name">Qwen3.5-2B (QICD)</td>
                             <td>8.2</td>
                             <td>0.18</td>
-                            <td>0.04</td>
                             <td>0.06</td>
+                            <td>0.09</td>
                             <td><em>0.347</em></td>
                             <td><em>0.161</em></td>
                         </tr>
                         <tr class="highlight-row">
                             <td class="method-name">Qwen3.5-2B (Ego-CoMist+)</td>
-                            <td><strong>19.7</strong></td>
-                            <td><strong>0.30</strong></td>
-                            <td><strong>0.08</strong></td>
-                            <td><strong>0.13</strong></td>
-                            <td><em>0.433</em></td>
-                            <td><em>0.278</em></td>
+                            <td><strong>14.8</strong></td>
+                            <td><strong>0.24</strong></td>
+                            <td><strong>0.12</strong></td>
+                            <td><strong>0.16</strong></td>
+                            <td><em>0.446</em></td>
+                            <td><em>0.276</em></td>
                         </tr>
                     </tbody>
                 </table>
